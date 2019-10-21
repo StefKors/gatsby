@@ -26,44 +26,19 @@ class ListItem extends React.Component {
 
   render() {
     // This syntax ensures `this` is bound within handleClick
-    return (
-      <React.Fragment>
-        <div key={this.props.index} className={styles.slide}>
-          <div>
-            <div className={styles.url}>
-              <span className={styles.date}>{this.props.data.Date}</span>
-            </div>
-            <div className={styles.title}>{this.props.data.Project}</div>
-          </div>
-          <div className={styles.types}>{this.props.data.Tech}</div>
-          <p className={styles.description}>{this.props.data.Description}</p>
-
-          <div className={styles.dataList}>
-            {this.props.data.Collaborators && (
-              <div className={styles.description}>
-                <span>Collaborators:</span> <br />{" "}
-                {this.props.data.Collaborators}
-              </div>
-            )}
-
-            {this.props.data.Url && (
-              <div className={styles.description}>
-                <span>Visit:</span> <br />
-                {/* {this.props.data.Collaborators} */}
-                <a
-                  href={this.props.data.Url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {this.getHostName(this.props.data.Url)}
-                </a>
-              </div>
-            )}
-          </div>
-
-        </div>
-      </React.Fragment>
-    )
+    const url = this.props.data.Url
+    if (url) {
+      return (
+        <a
+            href={this.props.data.Url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {this.getHostName(this.props.data.Url)}
+          </a>
+      )
+    } 
+    return <div>{this.props.data.Project}</div>
   }
 }
 

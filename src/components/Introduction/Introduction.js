@@ -74,9 +74,4 @@ const Introduction = props => (
   </div>
 )
 
-Introduction.defaultProps = {
-  count: "098897",
-  string: "testing",
-}
-
 export default Introduction
