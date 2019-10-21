@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 5% 47.5% 47.5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+}
