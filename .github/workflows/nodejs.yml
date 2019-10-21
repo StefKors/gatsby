@@ -20,7 +20,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: npm install & deploy
       run: |
-        remote_repo="https://${github_token}@github.com/${GITHUB_REPOSITORY}.git"
+        remote_repo="https://${{github_token}}@github.com/${{GITHUB_REPOSITORY}}.git"
         remote_branch="gh-pages"
         git config --global user.email "stef.kors@gmail.com"
         git config --global user.name "StefKors"
