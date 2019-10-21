@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./Introduction.module.css";
+import styles from "./Introduction.module.css"
 
 const Introduction = props => (
   <div className={styles.wrapper}>
@@ -11,7 +11,11 @@ const Introduction = props => (
       </p>
       <p>
         Together with <a href="http://dkdkpl.com">Victoria</a> and{" "}
-        <a href="http://titusknegtel.nl" target="_blank" rel="noopener noreferrer">
+        <a
+          href="http://titusknegtel.nl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Titus
         </a>{" "}
         he runs <a href="https://www.oneacre.online">oneacre.online</a>. An
@@ -19,23 +23,43 @@ const Introduction = props => (
       </p>
       <p>
         He currently works at{" "}
-        <a target="_blank" rel="noopener noreferrer"  href="https://www.ontwerpwerk.nl">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.ontwerpwerk.nl"
+        >
           Ontwerpwerk
         </a>
         . Previously he worked at{" "}
-        <a target="_blank" rel="noopener noreferrer" href="https://www.publishinglab.nl/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.publishinglab.nl/"
+        >
           PublishingLab
         </a>
         ,{" "}
-        <a target="_blank" rel="noopener noreferrer" href="https://www.bynder.com/en/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.bynder.com/en/"
+        >
           Bynder
         </a>
         ,{" "}
-        <a target="_blank" rel="noopener noreferrer" href="https://www.mangrove.com">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.mangrove.com"
+        >
           Mangrove
         </a>
         ,{" "}
-        <a target="_blank" rel="noopener noreferrer" href="http://www.vandencollection.com">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://www.vandencollection.com"
+        >
           Studio Van Den
         </a>
         .
@@ -46,51 +70,13 @@ const Introduction = props => (
         Co-Design. At the end of the day, he likes to build things — online and
         offline — that work well and efficiently.
       </p>
-
-      <div className={styles.selected}>
-        <p>Greatest Hits</p>
-        <ol>
-        <li>
-            <a href="https://apps.apple.com/us/app/kor-utrecht/id1478256409" target="_blank" rel="noopener noreferrer">
-              <div className={styles.metadata}>
-                <h3>Kunst in openbare ruimte Utrecht</h3>
-                <p>2019</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.borrenstaalenhoef.nl" target="_blank" rel="noopener noreferrer">
-              <div className={styles.metadata}>
-                <h3>Borren Staalenhoef Architects</h3>
-                <p>2019</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.oneacre.online/?id=lisa-stef-J1541248969078" target="_blank" rel="noopener noreferrer">
-              <div className={styles.metadata}>
-                <h3>Meaning Seeking Animals</h3>
-                <p>2018</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.publishorperish.pro" target="_blank" rel="noopener noreferrer">
-              <div className={styles.metadata}>
-                <h3>Publish or Perish</h3>
-                <p>2018</p>
-              </div>
-            </a>
-          </li>
-        </ol>
-      </div>
     </div>
   </div>
-);
+)
 
 Introduction.defaultProps = {
   count: "098897",
-  string: "testing"
-};
+  string: "testing",
+}
 
-export default Introduction;
+export default Introduction

@@ -38,25 +38,29 @@ class ListItem extends React.Component {
           <div className={styles.types}>{this.props.data.Tech}</div>
           <p className={styles.description}>{this.props.data.Description}</p>
 
-          {this.props.data.Collaborators && (
-            <p className={styles.description}>
-              <span>Collaborators:</span> <br /> {this.props.data.Collaborators}
-            </p>
-          )}
+          <div className={styles.dataList}>
+            {this.props.data.Collaborators && (
+              <div className={styles.description}>
+                <span>Collaborators:</span> <br />{" "}
+                {this.props.data.Collaborators}
+              </div>
+            )}
 
-          {this.props.data.Url && (
-            <p className={styles.description}>
-              <span>Visit:</span> <br />
-              {/* {this.props.data.Collaborators} */}
-              <a
-                href={this.props.data.Url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {this.getHostName(this.props.data.Url)}
-              </a>
-            </p>
-          )}
+            {this.props.data.Url && (
+              <div className={styles.description}>
+                <span>Visit:</span> <br />
+                {/* {this.props.data.Collaborators} */}
+                <a
+                  href={this.props.data.Url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {this.getHostName(this.props.data.Url)}
+                </a>
+              </div>
+            )}
+          </div>
+
         </div>
       </React.Fragment>
     )
