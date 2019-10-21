@@ -5,7 +5,7 @@ const Introduction = props => (
   <div className={styles.wrapper}>
     <div className={styles.content}>
       <p>
-        Stef Kors is a developer with a background in design and user research.
+        Stef Kors is a front-end developer with a background in design and user research.
         His favourite work takes place at the intersection of design and code,
         building great websites with great people.
       </p>
