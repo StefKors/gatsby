@@ -40,6 +40,17 @@ em {
   margin: 0;
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.links a {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 900px) {
   .wrapper {
     grid-column: 1;

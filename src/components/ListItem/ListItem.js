@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import styles from "./ListItem.module.css"
 
 class ListItem extends React.Component {
@@ -30,15 +30,24 @@ class ListItem extends React.Component {
     if (url) {
       return (
         <a
-            href={this.props.data.Url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          href={this.props.data.Url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
+          <span className={styles.url}>
             {this.getHostName(this.props.data.Url)}
-          </a>
+          </span>
+          <span className={styles.year}>{this.props.data.Date}</span>
+        </a>
       )
-    } 
-    return <div>{this.props.data.Project}</div>
+    }
+    return (
+      <div className={styles.link}>
+        <span className={styles.url}>{this.props.data.Project}</span>
+        <span className={styles.year}>{this.props.data.Date}</span>
+      </div>
+    )
   }
 }
 

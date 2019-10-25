@@ -7,16 +7,14 @@ import SEO from "../components/seo"
 
 import Introduction from "../components/Introduction/Introduction"
 import PageWrapper from "../components/PageWrapper/PageWrapper"
-import ProjectList from "../components/List/List"
-import BlogList from "../components/Blog/List"
+import List from "../components/List/List"
 
-const IndexPage = () => (
-  <Layout>
+  const IndexPage = () => (
+    <Layout>
     <SEO title="Home" />
     <PageWrapper>
       <Introduction />
-      <BlogList />
-      <ProjectList />
+      <List />
     </PageWrapper>
   </Layout>
 )

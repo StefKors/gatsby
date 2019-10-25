@@ -1,83 +1,18 @@
-.slide {
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid;
-  width: calc(100%);
-  padding: 1rem 0 1rem;
-  transition: background 200ms;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
 
-.slide:hover {
-  transition: background 200ms;
-}
-
-.title {
-  z-index: 2;
-  font-size: 2.5rem;
-  line-height: 2.6rem;
-  display: block;
-  font-weight: 900;
-  text-transform: lowercase;
-  margin: 1rem 0;
-}
-
-.date {
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-.url {
-  display: inline;
-  font-size: 1rem;
-  line-height: 2.1rem;
-  display: block;
-}
-
-.url span {
-  opacity: 0.5;
-}
-
-.url a {
-  opacity: 0.5;
-  transition: opacity cubic-bezier(0.165, 0.84, 0.44, 1) 0.95s;
-}
-
-.url a:hover {
-  opacity: 1;
-  transition: opacity cubic-bezier(0.165, 0.84, 0.44, 1) 0.95s;
-}
-
-.types {
-  text-align: right;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem 0 1rem;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 28px;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-
-.description span {
-  opacity: 0.5;
-}
-
-.slide:hover .description {
-  display: block;
-}
-
-.dataList {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 /* animation: fade-in 1s ease .95s forwards,slide-up 1s cubic-bezier(.165,.84,.44,1) .95s; */
+
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding: 1rem 0;
+  transition: cubic-bezier(.165,.84,.44,1) .95s;
+}
+
+.link:hover {
+  padding-left: 2rem;
+  transition: cubic-bezier(.165,.84,.44,1) .95s;
+}

@@ -1,8 +1,11 @@
 import React from "react"
 import styles from "./Introduction.module.css"
+import { motion } from "framer-motion"
 
 const Introduction = props => (
-  <div className={styles.wrapper}>
+  <motion.div
+    className={styles.wrapper}
+  >
     <div className={styles.content}>
       <p>
         Stef Kors is a developer with a background in design and user research.
@@ -70,8 +73,13 @@ const Introduction = props => (
         Co-Design. At the end of the day, he likes to build things — online and
         offline — that work well and efficiently.
       </p>
+      <div className={styles.links}>
+        <a href="mailto:stef.kors+website@gmail.com">email</a>
+        <a href="https://www.linkedin.com/in/stefkors/">linkedin</a>
+        <a href=" https://twitter.com/stef_kors">twitter</a>
+      </div>
     </div>
-  </div>
+  </motion.div>
 )
 
 export default Introduction
