@@ -1,6 +1,8 @@
-.page_wrapper {
+.list {
   display: grid;
-  grid-template-columns: 5% 47.5% 47.5%;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 900px) {
