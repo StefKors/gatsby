@@ -8,7 +8,7 @@ const Introduction = props => (
   >
     <div className={styles.content}>
       <p>
-        Stef Kors is a front-end developer with a background in design and user research.
+        Stef Kors is a developer with a background in design and user research.
         His favourite work takes place at the intersection of design and code,
         building great websites with great people.
       </p>
@@ -29,11 +29,18 @@ const Introduction = props => (
         <a
           target="_blank"
           rel="noopener noreferrer"
+          href="https://www.balena.io"
+        >
+          Balena
+        </a>
+        . Previously he worked at{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.ontwerpwerk.nl"
         >
           Ontwerpwerk
-        </a>
-        . Previously he worked at{" "}
+        </a>,{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"

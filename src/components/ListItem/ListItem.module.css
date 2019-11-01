@@ -2,17 +2,20 @@
 
 /* animation: fade-in 1s ease .95s forwards,slide-up 1s cubic-bezier(.165,.84,.44,1) .95s; */
 
-
-.link {
+.offline,
+.online {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid;
   padding: 1rem 0;
+}
+
+.online {
   transition: cubic-bezier(.165,.84,.44,1) .95s;
 }
 
-.link:hover {
+.online:hover {
   padding-left: 2rem;
   transition: cubic-bezier(.165,.84,.44,1) .95s;
 }

@@ -33,7 +33,7 @@ class ListItem extends React.Component {
           href={this.props.data.Url}
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.link}
+          className={styles.online}
         >
           <span className={styles.url}>
             {this.getHostName(this.props.data.Url)}
@@ -43,7 +43,7 @@ class ListItem extends React.Component {
       )
     }
     return (
-      <div className={styles.link}>
+      <div className={styles.offline}>
         <span className={styles.url}>{this.props.data.Project}</span>
         <span className={styles.year}>{this.props.data.Date}</span>
       </div>
