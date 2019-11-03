@@ -22,10 +22,7 @@ const Introduction = props => (
           Titus
         </a>{" "}
         he runs <a href="https://www.oneacre.online">oneacre.online</a>. An
-        online publication project for experimental long-form writing.
-      </p>
-      <p>
-        He currently works at{" "}
+        online publication project for experimental long-form writing. He currently works as a front-end engineer at{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"

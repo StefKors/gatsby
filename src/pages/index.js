@@ -14,9 +14,7 @@ const IndexPage = ({ data }) => (
       <Introduction />
     </PageWrapper>
 
-    <PageWrapper>
-      <ProjectList />
-    </PageWrapper>
+    <ProjectList />
   </Layout>
 )
 

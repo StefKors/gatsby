@@ -8,6 +8,32 @@
   opacity: 0;
 }
 
+th {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+th, td {
+  vertical-align: top;
+}
+
+@media screen and (max-width: 900px) {
+  th:nth-of-type(1),
+  tr td:nth-of-type(1),
+  th:nth-of-type(4),
+    tr td:nth-of-type(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  th:nth-of-type(3),
+    tr td:nth-of-type(3) {
+    display: none;
+  }
+}
+
+
 .projectList {
   max-width: 1200px;
   margin: 0 auto;

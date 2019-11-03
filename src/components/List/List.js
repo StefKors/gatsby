@@ -42,23 +42,32 @@ class List extends React.Component {
         variants={list}
         className={styles.wrapper}
       >
-        <div className={styles.projectList}>
-          {data.map((post, index) => (
-            <motion.div
-              variants={items}
-              transition={{ ease: [0.165, 0.84, 0.44, 1] }}
-              key={index}
-            >
-              <ListItem
-                data={post}
-                index={index}
+        <table>
+          <thead>
+            <th>#</th>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Team</th>
+          </thead>
+
+          <tbody className={styles.projectList}>
+            {data.map((post, index) => (
+              <motion.tr
+                variants={items}
+                transition={{ ease: [0.165, 0.84, 0.44, 1] }}
                 key={index}
-                isOpen={"open"}
-                className={styles.item}
-              />
-            </motion.div>
-          ))}
-        </div>
+              >
+                <ListItem
+                  data={post}
+                  index={index}
+                  key={index}
+                  isOpen={"open"}
+                  className={styles.item}
+                />
+              </motion.tr>
+            ))}
+          </tbody>
+        </table>
       </motion.div>
     )
   }

@@ -1,21 +1,12 @@
 
 
 /* animation: fade-in 1s ease .95s forwards,slide-up 1s cubic-bezier(.165,.84,.44,1) .95s; */
+/* transition: cubic-bezier(.165,.84,.44,1) .95s; */
 
-.offline,
-.online {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.url {
   border-bottom: 1px solid;
-  padding: 1rem 0;
 }
 
-.online {
-  transition: cubic-bezier(.165,.84,.44,1) .95s;
-}
-
-.online:hover {
-  padding-left: 2rem;
-  transition: cubic-bezier(.165,.84,.44,1) .95s;
+.description {
+  max-width: 900px;
 }
