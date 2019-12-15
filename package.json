@@ -1,47 +1,29 @@
 {
-  "name": "gatsby",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "experimental publishing",
+  "author": "Stef Kors",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+  },
   "dependencies": {
-    "framer-motion": "^1.6.15",
-    "gatsby": "^2.16.1",
-    "gatsby-image": "^2.2.29",
-    "gatsby-plugin-manifest": "^2.2.23",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.31",
-    "gatsby-source-filesystem": "^2.1.33",
-    "gatsby-transformer-remark": "^2.6.30",
-    "gatsby-transformer-sharp": "^2.2.23",
-    "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "@nuxt/markdown": "^0.0.21",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "eslint": "^6.7.2",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "prettier": "^1.18.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "frontmatter-markdown-loader": "^3.1.0",
+    "prettier": "^1.16.4"
   }
 }
