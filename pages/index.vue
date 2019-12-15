@@ -1,56 +1,44 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        Stef Kors
-      </h1>
-      <h2 class="subtitle">
-        experimental publishing
-      </h2>
-      <div class="links">
-        <nuxt-link to="/publication-1" class="button--green">
-          First markdown test
-        </nuxt-link>
-      </div>
+  <article class="container">
+    <div class="hero">
+      <Markdown class="introduction" :file="require('./introduction.md')" />
     </div>
-  </div>
+    <div class="list">
+      <ProjectList :data="require('~/data/db.json')" />
+    </div>
+  </article>
 </template>
 
 <script>
+import Markdown from "~/components/Markdown.vue"
+import ProjectList from "~/components/ProjectList.vue"
+
 export default {
-  components: {}
+  components: {
+    Markdown,
+    ProjectList,
+  },
 }
 </script>
 
 <style>
+/* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .container {
+  font-size: 16px;
+  line-height: 28px;
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.hero {
+  padding: 3rem;
+  background-color: papayawhip;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.introduction {
+  max-width: 33rem;
 }
 
-.links {
-  padding-top: 15px;
+.list {
+  padding: 3rem;
 }
 </style>

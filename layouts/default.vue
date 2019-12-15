@@ -5,10 +5,15 @@
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Overpass", sans-serif !important;
   font-size: 16px;
+  line-height: 28px;
+  background: #f2f2f2;
+  color: #15241a;
+
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -24,32 +29,31 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a {
+  color: inherit;
   text-decoration: none;
-  padding: 10px 30px;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  border-bottom: 1px solid;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+a:active,
+a:hover {
+  outline-width: 0;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+img {
+  width: 100%;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+em {
+  font-style: normal;
+  padding: 6px 3px 3px 3px;
+  border-radius: 30px;
+  border: 1px solid;
+}
+
+p {
+  margin: 1rem 0;
 }
 </style>

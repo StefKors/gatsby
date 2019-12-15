@@ -1,9 +1,5 @@
 <template>
-  <div class="container">
-    <div>
-      <component :is='this.contents' />
-    </div>
-  </div>
+  <component :is="this.contents" />
 </template>
 
 <script>
@@ -16,8 +12,8 @@ export default {
   props: {
     file: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   created() {
     const markdown = this.file
