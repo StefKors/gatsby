@@ -8,7 +8,7 @@
         :key="item.Number"
       >
         <a
-        class="link"
+          class="link"
           v-if="Boolean(item.Url)"
           :href="item.Url"
           target="_blank"
@@ -38,7 +38,7 @@ export default {
   },
   props: {
     data: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },

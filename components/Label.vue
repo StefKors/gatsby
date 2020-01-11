@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .date {
   background: pink;
   padding: .2rem .6rem;
