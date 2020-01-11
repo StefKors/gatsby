@@ -25,7 +25,7 @@ export default {
 /* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .container {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.8;
   margin: 0 auto;
 }
 

@@ -9,8 +9,8 @@
 
 html {
   font-family: "Overpass", sans-serif !important;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 1.25;
   background: #f2f2f2;
   color: #15241a;
 
