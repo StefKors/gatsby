@@ -16,6 +16,7 @@ export default {
     },
   },
   created() {
+    console.log('file', this.file)
     const markdown = this.file
     this.contents = markdown.vue.component
   },

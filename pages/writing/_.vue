@@ -1,7 +1,10 @@
 <template>
   <article class="container">
     <div class="hero">
-      <!-- <Markdown class="introduction" :file="require('./introduction.md')" /> -->
+      <h1>{{title}}</h1>
+    </div>
+    <div class="content">
+      <div :is="writing.vue.component" />
     </div>
   </article>
 </template>
@@ -12,12 +15,51 @@ import Markdown from "~/components/Markdown.vue"
 export default {
   data() {
     return {
+      writing: {
+        vue: {
+          component: "404",
+        },
+      },
     }
   },
   components: {
     Markdown,
   },
-  mounted() {},
+  async asyncData({ params, app, store }) {
+    const list = store.state.writing
+
+    const functionWithPromise = article => {
+      //a function that returns a promise
+      return import(`~/pages/writing/${article}`)
+    }
+
+    const anAsyncFunction = async item => {
+      return functionWithPromise(item)
+    }
+
+    const getData = async () => {
+      return Promise.all(list.map(item => anAsyncFunction(item)))
+    }
+
+    return getData()
+      .then(async data => {
+        let returnArticle = undefined
+
+        const singleArticle = data.filter(article => {
+          const articleUrl = article.attributes.title
+            .replace(/\W+/g, "-")
+            .toLowerCase()
+          const slug = params.pathMatch
+
+          return articleUrl === slug
+        })
+
+        return { title: singleArticle[0].attributes.title, writing: singleArticle[0] }
+      })
+      .catch(e => {
+        error({ statusCode: 404, message: "Post not found" })
+      })
+  },
 }
 </script>
 
@@ -33,6 +75,11 @@ export default {
   padding: 3rem;
   background-color: papayawhip;
 }
+
+.content {
+  padding: 3rem;
+  max-width: 33rem;
+  }
 
 .introduction {
   max-width: 33rem;
