@@ -4,7 +4,7 @@
       <span
         target="_blank"
         class="title"
-        v-for="(item, i) in data"
+        v-for="(item) in data"
         :key="item.Number"
       >
         <a

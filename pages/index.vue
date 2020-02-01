@@ -2,15 +2,13 @@
   <article class="container">
     <div class="hero">
       <Markdown class="introduction" :file="require('./introduction.md')" />
-    </div>
-    <div class="list">
       <ProjectList :data="require('~/data/db.json')" />
     </div>
-    <div class="list">
+    <!-- <div class="list">
       <div v-for="(item, i) in writing" :key="i">
         <MarkdownPreview class="introduction" :file="item" folder="/writing" />
       </div>
-    </div>
+    </div> -->
   </article>
 </template>
 

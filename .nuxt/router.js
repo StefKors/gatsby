@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _0f908160 = () => interopDefault(import('../pages/writing/_.vue' /* webpackChunkName: "pages/writing/_" */))
-const _3d474574 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _bfbec2e2 = () => interopDefault(import('../pages/writing/_.vue' /* webpackChunkName: "pages/writing/_" */))
+const _6d9f2c16 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -17,11 +17,11 @@ export const routerOptions = {
 
   routes: [{
     path: "/writing/*",
-    component: _0f908160,
+    component: _bfbec2e2,
     name: "writing-all"
   }, {
     path: "/",
-    component: _3d474574,
+    component: _6d9f2c16,
     name: "index"
   }],
 
