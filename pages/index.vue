@@ -2,7 +2,10 @@
   <article class="container">
     <div class="hero">
       <Markdown class="introduction" :file="require('./introduction.md')" />
-      <ProjectList :data="require('~/data/db.json')" />
+      <Marquee :data="require('~/data/db.json')" />
+    </div>
+    <div class="content">
+      <Overview :data="require('~/data/db.json')" />
     </div>
     <!-- <div class="list">
       <div v-for="(item, i) in writing" :key="i">
@@ -15,7 +18,8 @@
 <script>
 import Markdown from "~/components/Markdown.vue"
 import MarkdownPreview from "~/components/Markdown-Preview.vue"
-import ProjectList from "~/components/ProjectList.vue"
+import Marquee from "~/components/Marquee.vue"
+import Overview from "~/components/Overview.vue"
 
 export default {
   data() {
@@ -24,7 +28,8 @@ export default {
   components: {
     Markdown,
     MarkdownPreview,
-    ProjectList,
+    Marquee,
+    Overview,
   },
   async asyncData({ params, app, store }) {
     const list = store.state.writing
@@ -60,6 +65,10 @@ export default {
 .hero {
   padding: 3rem;
   background-color: papayawhip;
+}
+
+.content {
+  padding: 3rem;
 }
 
 .introduction {

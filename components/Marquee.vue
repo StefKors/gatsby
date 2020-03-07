@@ -63,6 +63,7 @@ export default {
 
 .title {
   font-size: 2rem;
+  padding: .5rem;
   display: inline-block;
   font-weight: bolder;
 }
