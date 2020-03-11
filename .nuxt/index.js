@@ -13,7 +13,6 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_workbox_d60c4436 from 'nuxt_plugin_workbox_d60c4436' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_57941fdf from 'nuxt_plugin_nuxticons_57941fdf' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_axios_ea61f1ee from 'nuxt_plugin_axios_ea61f1ee' // Source: ./axios.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -169,10 +168,6 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_workbox_d60c4436 === 'function') {
     await nuxt_plugin_workbox_d60c4436(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_nuxticons_57941fdf === 'function') {
-    await nuxt_plugin_nuxticons_57941fdf(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_ea61f1ee === 'function') {
