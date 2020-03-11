@@ -4,7 +4,7 @@
     "Url": "http://www.yunlee.digital",
     "Project": "yunlee.digital",
     "Description": "Personal site for Yun Ingrid Lee",
-    "Collaborators": "",
+
     "Tech": "Nuxt, Prismic, Netlify",
     "Type": "Website",
     "Images": 0,
@@ -59,7 +59,7 @@
     "Url": "https://www.nieuweenergieschiedam.nl",
     "Project": "Nieuwe Energie voor Schiedam",
     "Description": "Nieuwe Energie voor Schiedam is een samenwerking van de overheidsorganisaties Gemeente Schiedam en Provincie Zuid-Holland, de woningcorporatie Woonplus Schiedam, het energiebedrijf Eneco Warmte Koude B.V. en netbeheerder Stedin. Deze organisaties hebben begin 2017 met elkaar een zogenaamde green deal gesloten, in het Nederlands een ‘groene afspraak’. Green deals zijn afspraken tussen de overheid en andere partijen. Die andere partijen zijn bedrijven, maatschappelijke organisaties en andere overheden. Een Green Deal helpt om duurzame plannen uit te voeren. Bijvoorbeeld voor energie, klimaat, of verduurzaming van de economie.",
-    "Collaborators": "",
+
     "Tech": "Drupal 8",
     "Type": "Website",
     "Images": 0,
@@ -81,7 +81,7 @@
     "Url": "http://jaaroverzichtcommissarisvandekoning2018.zuid-holland.nl/",
     "Project": "Jaaroverzicht Commissaris van de Koning 2018",
     "Description": "An overview of 2018 from Jaap Smit the Commissaris of the King in Zuid-Holland.",
-    "Collaborators": "",
+
     "Tech": "Drupal 8, Javascript, Sass",
     "Type": "Website",
     "Images": 0,
@@ -148,7 +148,7 @@
     "Url": "https://www.florisvermist.nl",
     "Project": "florisvermist.nl",
     "Description": "Personal site for Theater technician Floris Vermist. Featuring projects, tags, highlights and imagegalleries.",
-    "Collaborators": "",
+
     "Type": "Website",
     "Tech": "Kirby CMS, Sass",
     "Images": 8,
@@ -202,7 +202,7 @@
     "Number": 16,
     "Project": "Biometric Interface",
     "Description": "For Yun Ingrid Eel's performance On Illegibility I built an Biometric Interface which shows RACE, SEX and AGE of the person via facial recognition. With this work Yun Ingrid Eel performed at Sonic Acts Academy 2018 in Amsterdam.",
-    "Collaborators": "",
+
     "Type": "Interface",
     "Tech": "Canvas, Affectiva API",
     "Images": 3,
@@ -213,7 +213,6 @@
     "Url": "http://www.artscienceforum.nl",
     "Project": "artscienceforum.nl",
     "Description": "ArtScience Forum (ASF) is a platform for open discussion and critical reflection on ArtScience practice(s) today. This website features five different types of articles which are all available directly from the homepage. Using the Kirby CMS makes it easy to add, remove and modify articles.",
-    "Collaborators": "",
     "Type": "Website",
     "Tech": "Kirby CMS",
     "Images": 9,
@@ -224,7 +223,7 @@
     "Url": "https://www.joostkors.com",
     "Project": "joostkors.com",
     "Description": "A personal site for Joost Kors. Based around his projects in the field of architecture. The site contains of a homepage, project page and archive.",
-    "Collaborators": "",
+
     "Tech": "HTML, CSS, Javascript",
     "Type": "Website",
     "Images": 7,
@@ -276,12 +275,11 @@
     "Number": 9,
     "Project": "Where the money is made, transaction counter",
     "Description": "For Eline Benjaminsen's work \"Where the money is made\" I made a single page website that illustrates the speed of hi-frequency trading transactions. Exhibited at the graduation festival at The Royal Academy of Art, The Hague and the Nederlands Fotografie Museum",
-    "Collaborators": "",
+
     "Type": "Website",
     "Tech": "HTML, CSS, Javascript",
     "Images": 2,
     "Date": 2017
-
   },
   {
     "Number": 8,
@@ -361,7 +359,7 @@
     "Url": "https://github.com/StefKors/SyntaxCheck",
     "Project": "SyntaxCheck Safari-plugin",
     "Description": "Safari Extension for Syntax Checking on MDN, currently a MVP. This extension makes it easy to search Mozilla Developer Network. Just click the icon and search.",
-    "Collaborators": "",
+
     "Type": "Safari Extension",
     "Tech": "Javascript",
     "Images": 0,

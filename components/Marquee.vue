@@ -56,9 +56,31 @@ export default {
 
 <style scoped>
 .data {
-  max-width: 130%;
+  max-width: 100vw;
   position: relative;
-  margin: 0 -4rem;
+  overflow: hidden;
+}
+
+.data::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255,239,213,1) 0%, rgba(255,239,213,0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4ch;
+  height: 5rem;
+  z-index: 99;
+}
+
+.data::after {
+  content: "";
+  background: linear-gradient(-90deg, rgba(255,239,213,1) 0%, rgba(255,239,213,0) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4ch;
+  height: 5rem;
+  z-index: 99;
 }
 
 .title {

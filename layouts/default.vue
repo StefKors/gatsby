@@ -6,6 +6,7 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Overpass:100,100i,200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
 
 html {
   font-family: "Overpass", sans-serif !important;
@@ -20,6 +21,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 *,

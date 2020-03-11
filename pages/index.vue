@@ -78,4 +78,12 @@ export default {
 .list {
   padding: 3rem;
 }
+
+@media screen and (max-width: 600px) {
+  .content,
+  .hero,
+  .list {
+    padding: 1rem;
+  }
+}
 </style>
