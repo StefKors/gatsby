@@ -18,9 +18,8 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
   },
-  {
-    server: {
-    port: 80, // default: 3000
+  server: {
+    port: 80
   },
   /*
    ** Customize the progress-bar color
