@@ -16,7 +16,7 @@
     "@nuxt/markdown": "^0.0.21",
     "@nuxtjs/axios": "^5.12.4",
     "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.3.2",
+    "@nuxtjs/pwa": "^3.3.3",
     "eslint": "^7.15.0",
     "nuxt": "^2.14.12",
     "vue-marquee-text-component": "^1.2.0"
