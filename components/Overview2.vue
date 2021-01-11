@@ -8,16 +8,24 @@
         rel="noopener noreferrer"
         class="title"
       >
-        <div class="circle"></div>
         <div class="label">{{ item.Project }}</div>
+        <div class="meta">
+          <div>{{item.Type}}</div>
+          <div>{{item.Tech}}</div>
+          <div>{{item.Date}}</div>
+        </div>
         <div class="description">
           {{ item.Description }}
         </div>
       </a>
 
       <span v-else class="title">
-        <div class="circle"></div>
         <div class="label">{{ item.Project }}</div>
+                <div class="meta">
+          <div>{{item.Type}}</div>
+          <div>{{item.Tech}}</div>
+          <div>{{item.Date}}</div>
+        </div>
         <div class="description">
           {{ item.Description }}
         </div>
@@ -63,7 +71,7 @@ export default {
 }
 
 .item {
-  max-width: 55ch;
+  /* max-width: 55ch; */
 }
 
 .item + .item {
@@ -74,29 +82,20 @@ export default {
   text-decoration: none;
   border: none;
   gap: 0rem;
-  align-items: center;
+  align-items: top;
   display: grid;
-  grid-template-columns: 1rem 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "a b"
-    "c d";
+  grid-template-columns: 25% 25% 50%;
 }
 
 .circle {
-  grid-area: a;
   border-radius: 1rem;
   height: .5rem;
   width: 0.5rem;
   opacity: 0.2;
 }
 
-.label {
-  grid-area: b;
-}
-
 .description {
-  grid-area: d;
+  max-width: 55ch;
 }
 
 .item:hover .circle {

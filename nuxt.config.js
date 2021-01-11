@@ -1,5 +1,6 @@
 import Mode from 'frontmatter-markdown-loader/mode'
 
+const isDev = process.env.NODE_ENV === 'development'
 export default {
   mode: 'spa',
   /*
@@ -19,7 +20,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
   },
   server: {
-    port: 80
+    port: isDev ? 3000 : 80
   },
   /*
    ** Customize the progress-bar color
