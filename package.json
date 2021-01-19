@@ -22,7 +22,7 @@
     "vue-marquee-text-component": "^1.2.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "frontmatter-markdown-loader": "^3.6.2",
     "prettier": "^2.2.1"
