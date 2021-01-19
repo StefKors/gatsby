@@ -1,6 +1,7 @@
 <template>
   <article class="container">
     <div class="hero">
+      <img class="profile" src="~/static/stef.png" alt="" />
       <Markdown class="introduction" :file="require('./introduction.md')" />
       <Overview2 :data="require('~/data/db.json')" />
     </div>
@@ -31,20 +32,20 @@ export default {
   async asyncData({ params, app, store }) {
     const list = store.state.writing
 
-    const functionWithPromise = article => {
+    const functionWithPromise = (article) => {
       //a function that returns a promise
       return import(`~/pages/writing/${article}`)
     }
 
-    const anAsyncFunction = async item => {
+    const anAsyncFunction = async (item) => {
       return functionWithPromise(item)
     }
 
     const getData = async () => {
-      return Promise.all(list.map(item => anAsyncFunction(item)))
+      return Promise.all(list.map((item) => anAsyncFunction(item)))
     }
 
-    return getData().then(data => {
+    return getData().then((data) => {
       return { writing: data }
     })
   },
@@ -64,12 +65,30 @@ export default {
 }
 
 .content {
+}
 
+.profile {
+  max-width: 15rem;
+  border-radius: 100rem;
 }
 
 .introduction {
-  max-width: 33rem;
+  margin-top: 20vh;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
   border-bottom: 1px solid var(--color);
+  font-family: "Unna", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 60px;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+.introduction > * {
+  max-width: 30ch;
 }
 
 .list {

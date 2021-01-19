@@ -5,6 +5,7 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
