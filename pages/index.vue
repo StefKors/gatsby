@@ -1,7 +1,7 @@
 <template>
   <article class="container">
     <div class="hero">
-      <img class="profile" src="~/static/stef.png" alt="" />
+      <!-- <img class="profile" src="~/static/stef.png" alt="" /> -->
       <Markdown class="introduction" :file="require('./introduction.md')" />
       <Overview2 :data="require('~/data/db.json')" />
     </div>
@@ -68,20 +68,20 @@ export default {
 }
 
 .profile {
-  max-width: 15rem;
+  max-width: 10rem;
   border-radius: 100rem;
 }
 
 .introduction {
   margin-top: 20vh;
-  margin-bottom: 5rem;
-  padding-bottom: 5rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
   border-bottom: 1px solid var(--color);
   font-family: "Unna", sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 1.2em;
-  font-size: 60px;
+  font-size: 2.5rem;
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0px;
