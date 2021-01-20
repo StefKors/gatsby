@@ -17,6 +17,7 @@ import nuxt_plugin_plugin_669b8773 from 'nuxt_plugin_plugin_669b8773' // Source:
 import nuxt_plugin_workbox_d60c4436 from 'nuxt_plugin_workbox_d60c4436' // Source: ./workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_025d6ff8 from 'nuxt_plugin_metaplugin_025d6ff8' // Source: ./pwa/meta.plugin.js (mode: 'all')
 import nuxt_plugin_axios_ea61f1ee from 'nuxt_plugin_axios_ea61f1ee' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_vuexpersist_13f465a2 from 'nuxt_plugin_vuexpersist_13f465a2' // Source: ../plugins/vuex-persist (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -73,7 +74,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Stef's webpage online","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"experimental publishing"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"portfolio"},{"hid":"author","name":"author","content":"Stef Kors"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"portfolio"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"portfolio"},{"hid":"og:description","name":"og:description","property":"og:description","content":"experimental publishing"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.svg"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.3293ee16.json","hid":"manifest"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"Stef's webpage online","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"experimental publishing"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.svg"}],"style":[],"script":[]},
 
     store,
     router,
@@ -216,6 +217,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_ea61f1ee === 'function') {
     await nuxt_plugin_axios_ea61f1ee(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuexpersist_13f465a2 === 'function') {
+    await nuxt_plugin_vuexpersist_13f465a2(app.context, inject)
   }
 
   // Lock enablePreview in context

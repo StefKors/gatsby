@@ -73,10 +73,6 @@ export default {
       sorted: [],
       letters: [],
       chapters: {},
-      sortSettings: {
-        direction: "asc",
-        key: "Project",
-      },
       sortOptions: {
         direction: [
           {
@@ -117,18 +113,12 @@ export default {
       required: true,
     },
   },
-  beforeMount() {
-    // https://torinodesign.info/
-  },
   methods: {
     handleDirection: function (option) {
-      // this.paused = true
-      this.sortSettings.direction = option.value
+      this.$store.commit('setSortDirection', option)
     },
     handleKey: function (option) {
-      // this.paused = true
-      this.sortSettings.key = option.value
-      this.sortSettings.direction = option.defaultSort
+      this.$store.commit('setSortKey', option)
     },
     formattedKey: function (item) {
       const { key } = this.sortSettings
@@ -179,6 +169,9 @@ export default {
       const { key, direction } = this.sortSettings
 
       return _.orderBy(this.data, [(item) => item[key]], [direction])
+    },
+    sortSettings() {
+      return this.$store.state.sortSettings
     },
     // sortedProjects: function () {
     //   const { key, direction } = this.sortSettings
