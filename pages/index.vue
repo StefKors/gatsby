@@ -3,6 +3,7 @@
     <div class="hero">
       <!-- <img class="profile" src="~/static/stef.png" alt="" /> -->
       <Markdown class="introduction" :file="require('./introduction.md')" />
+      <Border />
       <Overview2 :data="require('~/data/db.json')" />
     </div>
     <!-- <div class="list">
@@ -14,20 +15,10 @@
 </template>
 
 <script>
-import Markdown from "~/components/Markdown.vue"
-import MarkdownPreview from "~/components/Markdown-Preview.vue"
-import Marquee from "~/components/Marquee.vue"
-import Overview2 from "~/components/Overview2.vue"
 
 export default {
   data() {
     return {}
-  },
-  components: {
-    Markdown,
-    MarkdownPreview,
-    Marquee,
-    Overview2,
   },
   async asyncData({ params, app, store }) {
     const list = store.state.writing
@@ -74,9 +65,6 @@ export default {
 
 .introduction {
   margin-top: 20vh;
-  margin-bottom: 4rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid var(--color);
   font-family: "Unna", sans-serif;
   font-weight: 700;
   font-style: normal;

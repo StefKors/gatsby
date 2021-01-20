@@ -15,8 +15,9 @@ html { font-family: 'Inter', sans-serif; }
 :root {
   --color: #f2f2f2;
   --bg: #333;
-  --bg-light: var(--color);
+  --bg-light: rgb(110, 110, 110);
   --accent: #07FFE1;
+  --accent-dark: #04b4a0;
 }
 
 html {
@@ -52,6 +53,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+  color: var(--accent);
 }
 
 img {

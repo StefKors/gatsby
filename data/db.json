@@ -1,9 +1,19 @@
 [
+  {
+    "Number": 36,
+    "Url": "https://sisselmarietonn.com",
+    "Project": "sisselmarietonn.com",
+    "Description": "Personal website of Sissel Marie Tonn. Sissel is a Danish artist based in The Hague, The Netherlands. In her practice she explores the complex ways humans perceive, act upon and are entangled with their environments.",
+    "Tech": "Nuxt, Prismic, Netlify",
+    "Type": "Website",
+    "Images": 0,
+    "Date": 2020
+  },
     {
     "Number": 35,
     "Url": "https://github.com/StefKors/Hyperlink-Nova-Theme",
-    "Project": "Hyperlink theme (Nova)",
-    "Description": "Personal Nova theme",
+    "Project": "Hyperlink theme",
+    "Description": "Personal color theme for the Nova text editor from Panic",
     "Tech": "CSS",
     "Type": "Theme",
     "Images": 0,
@@ -13,8 +23,7 @@
     "Number": 34,
     "Url": "http://www.yunlee.digital",
     "Project": "yunlee.digital",
-    "Description": "Personal site for Yun Ingrid Lee",
-
+    "Description": "Personal website of Yun Ingrid Lee. Yun Ingrid Lee is an artist and curator mostly working with text, sound, scores, and performance.",
     "Tech": "Nuxt, Prismic, Netlify",
     "Type": "Website",
     "Images": 0,
@@ -60,7 +69,7 @@
     "Description": "Hutchison Ports ECT Rotterdam (ECT) is one of the leading and most advanced container terminal operators in Europe. ECT operates the ECT Delta terminal and the ECT Euromax terminal. The app features, Service notifications, object status, frequently asked questions, news, specific information for the efficient handling of truck transport and more to come.",
     "Collaborators": "Maarten Hoogenboom",
     "Tech": "Angular JS, Cordova",
-    "Type": "App",
+    "Type": "iOS and Android App",
     "Images": 0,
     "Date": 2019
   },
@@ -213,7 +222,7 @@
     "Project": "Biometric Interface",
     "Description": "For Yun Ingrid Eel's performance On Illegibility I built an Biometric Interface which shows RACE, SEX and AGE of the person via facial recognition. With this work Yun Ingrid Eel performed at Sonic Acts Academy 2018 in Amsterdam.",
 
-    "Type": "Interface",
+    "Type": "Performance",
     "Tech": "Canvas, Affectiva API",
     "Images": 3,
     "Date": 2018
@@ -348,7 +357,7 @@
     "Project": "Notes/Research App",
     "Description": "In the spring of 2016 I was asked to design an application that could help students and designers keep track of their research and progress. Through design research I was able to determine that most students, artists and designers are using software that isn’t optimised for their way of working. For them I designed a digital notebook to collect and expand their research",
     "Collaborators": "Victoria Douka-Doukopoulou",
-    "Type": "App Design",
+    "Type": "Design",
     "Tech": "Service Design, Sketching, User-Research",
     "Images": 5,
     "Date": 2016
@@ -370,7 +379,7 @@
     "Project": "SyntaxCheck Safari-plugin",
     "Description": "Safari Extension for Syntax Checking on MDN, currently a MVP. This extension makes it easy to search Mozilla Developer Network. Just click the icon and search.",
 
-    "Type": "Safari Extension",
+    "Type": "Browser Extension",
     "Tech": "Javascript",
     "Images": 0,
     "Date": 2016
