@@ -1,6 +1,7 @@
 <template>
   <div>
     <nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -42,20 +43,6 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  border-bottom: 1px solid;
-}
-
-a:active,
-a:hover {
-  outline-width: 0;
-  color: var(--accent);
-}
-
 img {
   width: 100%;
 }
@@ -69,5 +56,10 @@ em {
 
 p {
   margin: 1rem 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>

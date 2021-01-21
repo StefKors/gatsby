@@ -1,9 +1,27 @@
 {
+  "About": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "LazyAbout": {
+    "description": "Auto imported from components/About.vue"
+  },
   "Border": {
     "description": "Auto imported from components/Border.vue"
   },
   "LazyBorder": {
     "description": "Auto imported from components/Border.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Jobs": {
+    "description": "Auto imported from components/Jobs.vue"
+  },
+  "LazyJobs": {
+    "description": "Auto imported from components/Jobs.vue"
   },
   "Label": {
     "description": "Auto imported from components/Label.vue"

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="border white"></div>
-    <div class="border blue"></div>
+    <!-- <div class="border blue"></div> -->
   </div>
 </template>
 

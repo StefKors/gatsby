@@ -3,14 +3,12 @@
     <div class="hero">
       <!-- <img class="profile" src="~/static/stef.png" alt="" /> -->
       <Markdown class="introduction" :file="require('./introduction.md')" />
+      <Jobs :data="require('~/data/resume.json')" />
+      <Border />
+      <About />
       <Border />
       <Overview2 :data="require('~/data/db.json')" />
     </div>
-    <!-- <div class="list">
-      <div v-for="(item, i) in writing" :key="i">
-        <MarkdownPreview class="introduction" :file="item" folder="/writing" />
-      </div>
-    </div> -->
   </article>
 </template>
 

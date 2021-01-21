@@ -9,7 +9,9 @@
           :key="index"
           v-on:click="handleDirection(option)"
         >
-          {{ option.label }}
+          <div class="label">{{ option.label }}</div>
+          <div class="circle"></div>
+
         </button>
       </div>
       <div class="group">
@@ -20,7 +22,8 @@
           :key="index"
           v-on:click="handleKey(option)"
         >
-          {{ option.label }}
+          <div class="label">{{ option.label }}</div>
+          <div class="circle"></div>
         </button>
       </div>
     </div>
@@ -32,7 +35,9 @@
         :key="index"
       >
         <div class="drop-cap">
-          {{ compLetter }}
+          <div class="sticky">
+            {{ compLetter }}
+          </div>
         </div>
         <div class="projects">
           <div
@@ -173,41 +178,21 @@ export default {
     sortSettings() {
       return this.$store.state.sortSettings
     },
-    // sortedProjects: function () {
-    //   const { key, direction } = this.sortSettings
-
-    //   this.sorted = _.orderBy(this.data, [(item) => item[key]], [direction])
-
-    //   // Create array of unique letters
-    //   this.letters = _.union(
-    //     this.sorted.map((item) => {
-    //       return item.Project.charAt(0).toLowerCase()
-    //     })
-    //   )
-
-    //   // For each of these letters
-    //   // filter down the sorted projects
-    //   // into chapers per letter
-    //   this.letters.forEach((letter) => {
-    //     const group = this.sorted.filter((item) => {
-    //       if (item[key].charAt(0).toLowerCase() === letter) {
-    //         return item
-    //       }
-    //     })
-
-    //     this.chapters[letter] = {
-    //       ...this.chapters[letter],
-    //       ...group,
-    //     }
-    //   })
-
-    // },
   },
 }
 </script>
 
 <style scoped>
-/* transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s; */
+
+.item a {
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.item a:active,
+.item a:hover {
+  outline-width: 0;
+  color: var(--accent);
+}
 
 .chapters {
   margin-top: 4rem;
@@ -250,15 +235,56 @@ export default {
 
 .button {
   all: unset;
-  background: var(--bg-light);
+  border: 1px solid transparent;
   padding: 0.2rem 1rem;
   border-radius: 1rem;
   display: inline-block;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
 }
 
-.button:hover,
-.button.active {
-  background: var(--accent-dark);
+
+.button .circle,
+.button .circle {
+  background: transparent;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 100%;
+  display: inline-block;
+transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+.button:hover .circle,
+.button.active .circle {
+  background: var(--accent);
+}
+
+.button:hover .circle {
+  background: var(--bg-light);
+}
+
+.button.active .circle {
+  background: var(--accent);
+}
+
+
+@media screen and (max-width: 647px) {
+  .chapter {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 1rem;
+  }
+
+  .options {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 }
 </style>

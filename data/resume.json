@@ -1,0 +1,65 @@
+[
+  {
+    "company": "Balena",
+    "title": "Frontend Engineer",
+    "date": "November 2019 - Present",
+    "location": "Remote",
+    "url": "https://www.balena.io"
+  },
+  {
+    "company": "oneacre.online",
+    "title": "Co-Founder",
+    "date": "March 2016 - Present",
+    "location": "The Hague Area, Netherlands",
+    "url": "https://www.oneacre.online"
+  },
+  {
+    "company": "Ontwerpwerk",
+    "title": "Developer",
+    "date": "November 2018 - November 2019",
+    "locaiton": "The Hague Area, Netherlands",
+    "url": "https://www.ontwerpwer.nl"
+  },
+  {
+    "company": "PublishingLab",
+    "title": "Developer",
+    "date": "Januari 2018 - June 2018",
+    "location": "Amsterdam Area, Netherlands",
+    "url": "https://www.publishinglab.nl"
+  },
+  {
+    "company": "PublishingLab",
+    "title": "Design Intern",
+    "date": "September 2017 - December 2017",
+    "location": "Amsterdam, Netherlands",
+    "url": "https://www.publishinglab.nl"
+  },
+  {
+    "company": "Bynder",
+    "title": "User Experience Design Intern",
+    "date": "Februari 2017 - May 2017",
+    "location": "Rotterdam, Netherlands",
+    "url": "https://www.bynder.com"
+  },
+  {
+    "company": "Mangrove",
+    "title": "Interaction Design Intern",
+    "date": "September 2015 - Februari 2016",
+    "location": "Rotterdam, Netherlands",
+    "url": "https://www.mangrove.nl"
+  },
+  {
+    "company": "Navara",
+    "title": "Junior Design Consultant",
+    "date": "May 2014 - May 2015",
+    "location": "Driebergen-Rijsenburg, Netherlands",
+    "url": "https://www.navara.nl"
+  },
+  {
+    "company": "VanDen Collection",
+    "title": "Product Designer",
+    "date": "Februari 2013 - September 2013",
+    "location": "Dronten",
+    "url": "https://www.vandencollection.com"
+  }
+]
