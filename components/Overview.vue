@@ -1,39 +1,27 @@
 <template>
   <div class="data">
-    <div target="_blank" class="item" v-for="item in data" :key="item.Number">
-      <div class="description">
-        <p class="title">
-          <a
-            v-if="item.Url"
-            :href="item.Url"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ item.Project }}
-          </a>
-
-          <span v-if="!item.Url">{{ item.Project }}</span>
-          <span>{{ item.Type }}</span>
-        </p>
-        <p>
+    <div class="item" v-for="item in data" :key="item.Number">
+      <a
+        v-if="item.Url"
+        :href="item.Url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="title"
+      >
+        <div class="circle"></div>
+        <div class="label">{{ item.Project }}</div>
+        <div class="description">
           {{ item.Description }}
-        </p>
-        <p class="footer">
-          <span v-if="item.Collaborators"
-          class="collaborators"
-            >Worked with: {{ item.Collaborators }}</span
-          >
-          <span
-            class="date"
-            :style="{
-              backgroundColor: `hsla(${~~(360 * Math.random())},70%,70%,0.8)`,
-              transform: `rotate(${~~(40 * Math.random())}deg)`,
-            }"
-          >
-            {{ item.Date }}
-          </span>
-        </p>
-      </div>
+        </div>
+      </a>
+
+      <span v-else class="title">
+        <div class="circle"></div>
+        <div class="label">{{ item.Project }}</div>
+        <div class="description">
+          {{ item.Description }}
+        </div>
+      </span>
     </div>
   </div>
 </template>
@@ -58,10 +46,10 @@ export default {
   },
   created() {},
   methods: {
-    enter: function(i) {
+    enter: function (i) {
       this.paused = true
     },
-    leave: function(i) {
+    leave: function (i) {
       this.paused = false
     },
   },
@@ -71,55 +59,58 @@ export default {
 <style scoped>
 .data {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 600px) {
-  .data {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  .data {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  padding: 1rem 0;
 }
 
 .item {
   max-width: 55ch;
-  margin: 1rem;
-  padding: 1rem;
 }
 
-
-@media screen and (max-width: 600px) {
-  .item {
-    padding: 0;
-    margin: 0;
-  }
+.item + .item {
+  margin-top: 2rem;
 }
 
-
-.item a {
+.item .title {
   text-decoration: none;
   border: none;
-  color: #0000ee;
+  gap: 0rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "a b"
+    "c d";
 }
 
-.item a:visited {
-  color: #551a8b;
+.circle {
+  grid-area: a;
+  border-radius: 1rem;
+  height: .5rem;
+  width: 0.5rem;
+  opacity: 0.2;
+}
+
+.label {
+  grid-area: b;
 }
 
 .description {
+  grid-area: d;
 }
 
-.title {
-  border-bottom: 1px solid;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+.item:hover .circle {
+  opacity: 1;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+  grid-area: a / a / a / c;
+}
+
+a > .circle {
+  background: var(--accent);
+}
+
+span > .circle {
+  background: var(--bg-light);
 }
 
 .link {
@@ -129,24 +120,5 @@ export default {
   display: inline-block;
 }
 
-.footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.date {
-  border-radius: 100%;
-  height: 6ch;
-  width: 6ch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-}
-
-.collaborators {
-  max-width: 70%;
-}
 /* transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s; */
 </style>

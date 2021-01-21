@@ -26,7 +26,7 @@ export default {
     Markdown,
   },
   async asyncData({ params, app, store }) {
-    const list = store.state.writing
+    const list = store.state.writing || []
 
     const functionWithPromise = article => {
       //a function that returns a promise

@@ -1,7 +1,9 @@
 import Mode from 'frontmatter-markdown-loader/mode'
 
+const isDev = process.env.NODE_ENV === 'development'
 export default {
   mode: 'spa',
+  components: true,
   /*
    ** Headers of the page
    */
@@ -19,7 +21,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
   },
   server: {
-    port: 80
+    port: isDev ? 3000 : 80
   },
   /*
    ** Customize the progress-bar color
@@ -32,7 +34,9 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/vuex-persist', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

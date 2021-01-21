@@ -1,0 +1,62 @@
+{
+  "About": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "LazyAbout": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "Border": {
+    "description": "Auto imported from components/Border.vue"
+  },
+  "LazyBorder": {
+    "description": "Auto imported from components/Border.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Jobs": {
+    "description": "Auto imported from components/Jobs.vue"
+  },
+  "LazyJobs": {
+    "description": "Auto imported from components/Jobs.vue"
+  },
+  "Label": {
+    "description": "Auto imported from components/Label.vue"
+  },
+  "LazyLabel": {
+    "description": "Auto imported from components/Label.vue"
+  },
+  "MarkdownPreview": {
+    "description": "Auto imported from components/Markdown-Preview.vue"
+  },
+  "LazyMarkdownPreview": {
+    "description": "Auto imported from components/Markdown-Preview.vue"
+  },
+  "Markdown": {
+    "description": "Auto imported from components/Markdown.vue"
+  },
+  "LazyMarkdown": {
+    "description": "Auto imported from components/Markdown.vue"
+  },
+  "Marquee": {
+    "description": "Auto imported from components/Marquee.vue"
+  },
+  "LazyMarquee": {
+    "description": "Auto imported from components/Marquee.vue"
+  },
+  "Overview": {
+    "description": "Auto imported from components/Overview.vue"
+  },
+  "LazyOverview": {
+    "description": "Auto imported from components/Overview.vue"
+  },
+  "Overview2": {
+    "description": "Auto imported from components/Overview2.vue"
+  },
+  "LazyOverview2": {
+    "description": "Auto imported from components/Overview2.vue"
+  }
+}
