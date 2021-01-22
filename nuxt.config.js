@@ -15,7 +15,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
