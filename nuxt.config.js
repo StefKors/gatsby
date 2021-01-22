@@ -2,7 +2,7 @@ import Mode from 'frontmatter-markdown-loader/mode'
 
 const isDev = process.env.NODE_ENV === 'development'
 export default {
-  mode: 'spa',
+  ssr: false,
   components: true,
   /*
    ** Headers of the page

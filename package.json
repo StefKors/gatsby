@@ -16,9 +16,9 @@
     "@nuxt/markdown": "^0.0.21",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/dotenv": "^1.4.0",
-    "lodash": "^4.17.20",
     "@nuxtjs/pwa": "^3.3.4",
     "eslint": "^7.18.0",
+    "lodash": "^4.17.20",
     "nuxt": "^2.14.12",
     "vue-marquee-text-component": "^1.2.0",
     "vuex-persist": "^3.1.3"
