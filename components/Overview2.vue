@@ -254,7 +254,7 @@ export default {
   height: .4rem;
   border-radius: 100%;
   display: inline-block;
-transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 .button:hover .circle,
 .button.active .circle {

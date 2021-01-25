@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .wrapper {
   width: 100%;
   margin: 4rem 0;

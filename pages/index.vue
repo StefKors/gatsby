@@ -1,19 +1,15 @@
 <template>
   <article class="container">
-    <div class="hero">
-      <!-- <img class="profile" src="~/static/stef.png" alt="" /> -->
-      <Markdown class="introduction" :file="require('./introduction.md')" />
-      <Jobs :data="require('~/data/resume.json')" />
-      <Border />
-      <About />
-      <Border />
-      <Overview2 :data="require('~/data/db.json')" />
-    </div>
+    <Markdown class="introduction" :file="require('./introduction.md')" />
+    <Jobs :data="require('~/data/resume.json')" />
+    <Border />
+    <About />
+    <Border />
+    <Overview2 :data="require('~/data/db.json')" />
   </article>
 </template>
 
 <script>
-
 export default {
   data() {
     return {}
@@ -41,19 +37,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 /* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .container {
   font-size: 16px;
   line-height: 1.8;
   margin: 0 auto;
-}
-
-.hero {
-  padding: 3rem;
-}
-
-.content {
 }
 
 .profile {
@@ -62,7 +51,7 @@ export default {
 }
 
 .introduction {
-  margin-top: 20vh;
+  padding-top: 20vh;
   font-family: "Unna", sans-serif;
   font-weight: 700;
   font-style: normal;

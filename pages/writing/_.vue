@@ -43,27 +43,32 @@ export default {
 
     return getData()
       .then(async data => {
+        console.log('data', data)
         let returnArticle = undefined
 
         const singleArticle = data.filter(article => {
-          const articleUrl = article.attributes.title
+          const articleUrl = article.default.attributes.title
             .replace(/\W+/g, "-")
             .toLowerCase()
+            console.log('articleUrl', articleUrl)
           const slug = params.pathMatch
 
           return articleUrl === slug
         })
 
+        console.log('singleArticle', singleArticle)
+
         return { title: singleArticle[0].attributes.title, writing: singleArticle[0] }
       })
-      .catch(e => {
+      .catch(error => {
+        console.log('error', error)
         error({ statusCode: 404, message: "Post not found" })
       })
   },
 }
 </script>
 
-<style>
+<style lang="scss">
 /* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .container {
   font-size: 16px;

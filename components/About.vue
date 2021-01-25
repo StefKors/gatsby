@@ -6,12 +6,10 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style>
+<style lang="scss">
 .about-wrapper {
   display: grid;
   grid-template-columns: 30ch 1fr;
@@ -21,7 +19,7 @@ export default {
 }
 
 h2 {
-    font-family: "Unna", sans-serif;
+  font-family: "Unna", sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 1.2em;
