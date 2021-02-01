@@ -1,10 +1,12 @@
 <template>
-  
+  <article>
+    <Markdown class="introduction" :file="require('./explainer.md')" />
+  </article>
 </template>
 
 <script>
 export default {
-
+  name: "artist-websites"
 }
 </script>
 

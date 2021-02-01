@@ -11,33 +11,10 @@
 
 <script>
 export default {
-  data() {
-    return {}
-  },
-  async asyncData({ params, app, store }) {
-    const list = store.state.writing
-
-    const functionWithPromise = (article) => {
-      //a function that returns a promise
-      return import(`~/pages/writing/${article}`)
-    }
-
-    const anAsyncFunction = async (item) => {
-      return functionWithPromise(item)
-    }
-
-    const getData = async () => {
-      return Promise.all(list.map((item) => anAsyncFunction(item)))
-    }
-
-    return getData().then((data) => {
-      return { writing: data }
-    })
-  },
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .container {
   font-size: 16px;

@@ -1,6 +1,5 @@
 export const state = () => ({
   UIMode: "dark",
-  writing: ["content.md", "content2.md"],
   sortSettings: {
     direction: "asc",
     key: "Project",

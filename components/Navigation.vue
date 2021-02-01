@@ -1,17 +1,12 @@
 <template>
   <ul v-if="!isHomepage()" class="navigation">
-    <li>
-      <NuxtLink to="/">index</NuxtLink>
-    </li>
-    <li class="L1"><TreeItem /><NuxtLink to="/about">about</NuxtLink></li>
-    <li class="L1"><TreeItem /><NuxtLink to="/about">about</NuxtLink></li>
-    <li class="L1"><TreeItem /><NuxtLink to="/about">about</NuxtLink></li>
-    <li class="L2" v-for="writing in articles" :key="writing.path">
-      <TreeItem /><NuxtLink :to="writing.path">
-        {{ writing.name }}
+    <li><NuxtLink to="/">index</NuxtLink></li>
+    <li class="L1" v-for="page in articles" :key="page.path">
+      <NuxtLink :to="page.path">
+        <TreeItem class="tree" />
+        {{ unslugify(page.name) }}
       </NuxtLink>
     </li>
-    <li class="L1"><TreeItem /><NuxtLink to="/about">about</NuxtLink></li>
   </ul>
 </template>
 
@@ -22,26 +17,31 @@ export default {
   components: { TreeItem },
   data() {
     return {
-      articles: [],
+      // articles: [],
     }
   },
   methods: {
     isHomepage() {
       return this.$route.path === "/"
     },
+    unslugify(slug) {
+      const result = slug.replace(/\-/g, " ");
+      return result.replace(/\w\S*/g, function (txt) {
+        return txt
+      });
+    }
   },
-  created() {
-    console.log("routes", this.$router)
+  computed: {
+    articles() {
+      return this.$router.options.routes.filter(route => {
+        if(route.path === "/") {
+          return false 
+        }
 
-    this.$router.options.routes.forEach((route) => {
-      if (route.path.includes("writing")) {
-        this.articles.push({
-          name: route.name,
-          path: route.path,
-        })
-      }
-    })
-  },
+        return true
+      })
+    }
+  }
 }
 </script>
 
@@ -49,6 +49,7 @@ export default {
 .navigation {
   display: flex;
   flex-direction: column;
+  
 
   li {
     all: unset;
@@ -60,6 +61,14 @@ export default {
 
   .L2 {
     padding-left: 2rem;
+  }
+
+  .nuxt-link-exact-active .tree {
+    opacity: 1;
+  }
+
+  .tree {
+    opacity: .5;
   }
 }
 </style>
