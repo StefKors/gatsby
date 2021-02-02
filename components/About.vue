@@ -17,14 +17,5 @@ export default {}
   max-width: 80ch;
   margin: auto;
 }
-
-.about a {
-  border-bottom: 1px solid var(--bg-light);
-  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-}
-
-.about a:hover {
-  border-bottom: 1px solid var(--accent);
-}
 </style>
 

@@ -120,13 +120,27 @@ a {
 
   p {
     max-width: 55ch;
+  }
+  
+  p, li {
     font-size: 18px;
     letter-spacing: -0.0143007em;
-    line-height: 25px;
+    line-height: 1.37;
   }
 
   li {
     margin: 1rem 0;
+  }
+}
+
+.markdown {
+    a {
+    border-bottom: 1px solid var(--bg-light);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+
+    &:hover {
+      border-bottom: 1px solid var(--accent);
+    }
   }
 }
 

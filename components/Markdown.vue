@@ -62,6 +62,8 @@ export default {
 }
 
 .attributes {
+  margin-bottom: 4rem;
+  
   .key {
     opacity: 0.5;
     text-transform: capitalize;
