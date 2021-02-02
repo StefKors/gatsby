@@ -1,0 +1,23 @@
+/*  -------------------
+    S I Z E S
+-------------------  */
+$screen-xs: 480px !default;
+$screen-sm: 767px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+$screen-xl: 1600px !default;
+/*  -------------------
+    M I X I N S
+-------------------  */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin subheader {
+  font-size: 1rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

@@ -2,7 +2,7 @@ import Mode from 'frontmatter-markdown-loader/mode'
 
 const isDev = process.env.NODE_ENV === 'development'
 export default {
-  mode: 'spa',
+  ssr: false,
   components: true,
   /*
    ** Headers of the page
@@ -15,7 +15,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
@@ -45,12 +45,18 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    "@nuxtjs/svg",
+    '@nuxtjs/style-resources',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
+  // Doc: https://hackernoon.com/how-i-use-scss-variables-mixins-functions-globally-in-nuxt-js-projects-while-compiling-css-utilit-58bb6ff30438
+  styleResources: {
+    scss: ['assets/scss/main.scss'],
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -63,12 +69,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    // https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt.js/
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         options: {
-          mode: [Mode.VUE_COMPONENT]
+          mode: [Mode.VUE_COMPONENT, Mode.META, Mode.BODY]
         }
       })
     }

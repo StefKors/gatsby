@@ -39,7 +39,7 @@ export default {
 }
 
 .title {
-  opacity: 0.5;
+  color: var(--bg-light);
 }
 
 .date {
@@ -49,6 +49,7 @@ export default {
 }
 
 .job:hover .date {
-  opacity: 0.5;
+  color: var(--bg-light);
+  opacity: 1;
 }
 </style>
