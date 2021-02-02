@@ -22,7 +22,7 @@ export default {
 <style lang="scss">
 footer {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 8rem 1rem 4rem;
   opacity: 0.5;
   font-size: 0.8rem;
 
