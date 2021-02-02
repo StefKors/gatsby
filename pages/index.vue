@@ -37,9 +37,6 @@ export default {
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0px;
-}
-
-.introduction > * {
   max-width: 30ch;
 }
 

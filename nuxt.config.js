@@ -69,12 +69,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    // https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt.js/
     extend(config, ctx) {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
         options: {
-          mode: [Mode.VUE_COMPONENT]
+          mode: [Mode.VUE_COMPONENT, Mode.META, Mode.BODY]
         }
       })
     }

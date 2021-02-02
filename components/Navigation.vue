@@ -1,10 +1,10 @@
 <template>
   <ul v-if="!isHomepage()" class="navigation">
     <li><NuxtLink to="/">index</NuxtLink></li>
-    <li class="L1" v-for="page in articles" :key="page.path">
-      <NuxtLink :to="page.path">
+    <li :class="route.level" v-for="route in articles" :key="route.path">
+      <NuxtLink :to="route.path">
         <TreeItem class="tree" />
-        {{ unslugify(page.name) }}
+        {{ unslugify(route.title) }}
       </NuxtLink>
     </li>
   </ul>
@@ -13,13 +13,11 @@
 <script>
 import TreeItem from "~/assets/Icons/TreeItem.svg?inline"
 
+const omitName = [ "colofon", "artist-websites" ]
+const omitPath = [ "/" ]
+
 export default {
   components: { TreeItem },
-  data() {
-    return {
-      // articles: [],
-    }
-  },
   methods: {
     isHomepage() {
       return this.$route.path === "/"
@@ -34,12 +32,31 @@ export default {
   computed: {
     articles() {
       return this.$router.options.routes.filter(route => {
-        if(route.path === "/") {
+        // Omit any path included in omitPath array
+        if (omitPath.includes(route.path)) {
           return false 
         }
 
+        // Omit any name included in omitName array
+        if (omitName.includes(route.name) ) {
+          return false
+        }
+
         return true
+      }).map(route => {
+        // split array on "/"
+        // filter empty strings
+        const routePathArray = route.path.split('/').filter(Boolean)
+        // get the length of the array
+        const level = routePathArray.length
+        // set the level to the string "L1" (or "L2", "L3", ect)
+        route.level = `L${level}`
+        // create custom route by taking the page name without the folder name
+        route.title = routePathArray.pop()
+        // return the modified object
+        return route
       })
+
     }
   }
 }

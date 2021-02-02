@@ -1,6 +1,10 @@
 <template>
   <footer>
     <span>{{ year }}</span>
+    <nuxt-link to="/">index</nuxt-link>
+    <a href="https://github.com/StefKors" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://linkedin.com/in/stefkors" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:stef.kors@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
     <nuxt-link to="/colofon">Colofon</nuxt-link>
   </footer>
 </template>

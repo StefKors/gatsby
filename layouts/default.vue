@@ -65,6 +65,17 @@ h3,
 h4 {
 }
 
+h2 {
+  font-family: "Unna", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 2rem;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
 *,
 *:before,
 *:after {
@@ -95,5 +106,35 @@ a {
   margin: 3rem;
   position: relative;
   display: block;
+}
+
+.longform {
+  max-width: 70ch;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Inter var", sans-serif;
+  }
+
+  p {
+    max-width: 55ch;
+    font-size: 18px;
+    letter-spacing: -0.0143007em;
+    line-height: 25px;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+}
+
+.light .longform li {
+  list-style-image: url("~assets/Icons/Chevron/Light/Right.svg");
+}
+
+.dark .longform li {
+  list-style-image: url("~assets/Icons/Chevron/Dark/Right.svg");
 }
 </style>

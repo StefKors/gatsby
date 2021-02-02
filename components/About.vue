@@ -1,7 +1,7 @@
 <template>
   <div class="about-wrapper">
     <h2>About me</h2>
-    <Markdown class="about" :file="require('~/assets/about.md')" />
+    <Markdown class="about" :file="require('~/assets/about-short.md')" />
   </div>
 </template>
 
@@ -9,24 +9,13 @@
 export default {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .about-wrapper {
   display: grid;
   grid-template-columns: 30ch 1fr;
   gap: 1rem;
   max-width: 80ch;
   margin: auto;
-}
-
-h2 {
-  font-family: "Unna", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.2em;
-  font-size: 2rem;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0px;
 }
 
 .about a {
