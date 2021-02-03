@@ -21,7 +21,7 @@
     <li class="item">
       Typeface:
       <a
-        href="https://icons.modulz.app/"
+        href="https://rsms.me/inter/"
         target="_blank"
         rel="noopener noreferrer"
         >Inter by Rasmus Andersson</a
