@@ -1,25 +1,25 @@
 <template>
   <div class="data">
-    <div class="item" v-for="item in data" :key="item.Number">
+    <div class="item" v-for="item in data" :key="item.id">
       <a
-        v-if="item.Url"
-        :href="item.Url"
+        v-if="item.url"
+        :href="item.url"
         target="_blank"
         rel="noopener noreferrer"
         class="title"
       >
         <div class="circle"></div>
-        <div class="label">{{ item.Project }}</div>
+        <div class="label">{{ item.name }}</div>
         <div class="description">
-          {{ item.Description }}
+          {{ item.description }}
         </div>
       </a>
 
       <span v-else class="title">
         <div class="circle"></div>
-        <div class="label">{{ item.Project }}</div>
+        <div class="label">{{ item.name }}</div>
         <div class="description">
-          {{ item.Description }}
+          {{ item.description }}
         </div>
       </span>
     </div>

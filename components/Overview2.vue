@@ -11,7 +11,6 @@
         >
           <div class="label">{{ option.label }}</div>
           <div class="circle"></div>
-
         </button>
       </div>
       <div class="group">
@@ -41,24 +40,26 @@
         </div>
         <div class="projects">
           <div
+            :id="'project-' + item.id"
             class="item"
+            :class="{ target: idMatchesUrl('project-' + item.id) }"
             v-for="item in compChapters[compLetter]"
-            :key="item.Number"
+            :key="item.id"
           >
             <a
-              v-if="item.Url"
-              :href="item.Url"
+              v-if="item.url"
+              :href="item.url"
               target="_blank"
               rel="noopener noreferrer"
               class="title"
             >
-              <div class="label">{{ item.Project }}</div>
-              <div class="description">{{ item.Description }}</div>
+              <div class="label">{{ item.name }} <UpRight /> </div>
+              <div class="description">{{ item.description }}</div>
             </a>
 
             <span v-else class="title">
-              <div class="label">{{ item.Project }}</div>
-              <div class="description">{{ item.Description }}</div>
+              <div class="label">{{ item.name }}</div>
+              <div class="description">{{ item.description }}</div>
             </span>
           </div>
         </div>
@@ -68,6 +69,7 @@
 </template>
 
 <script>
+import UpRight from "~/assets/Icons/Arrow/Up-Right.svg?inline"
 import Label from "~/components/Label.vue"
 import _ from "lodash"
 
@@ -92,18 +94,18 @@ export default {
         key: [
           {
             label: "Name",
-            value: "Project",
-            defaultSort: 'asc'
+            value: "name",
+            defaultSort: "asc",
           },
           {
             label: "Year",
-            value: "Date",
-            defaultSort: 'desc'
+            value: "date",
+            defaultSort: "desc",
           },
           {
             label: "Type",
-            value: "Type",
-            defaultSort: 'asc'
+            value: "type",
+            defaultSort: "asc",
           },
         ],
       },
@@ -111,6 +113,7 @@ export default {
   },
   components: {
     Label,
+    UpRight
   },
   props: {
     data: {
@@ -120,29 +123,31 @@ export default {
   },
   methods: {
     handleDirection: function (option) {
-      this.$store.commit('setSortDirection', option)
+      this.$store.commit("setSortDirection", option)
     },
     handleKey: function (option) {
-      this.$store.commit('setSortKey', option)
+      this.$store.commit("setSortKey", option)
     },
     formattedKey: function (item) {
       const { key } = this.sortSettings
 
-      if (key === "Project") {
+      if (key === "name") {
         return item[key].charAt(0).toLowerCase()
       }
 
-      if (key === "Type") {
+      if (key === "type") {
         return item[key].toLowerCase()
       }
 
       return item[key]
     },
+    idMatchesUrl(id) {
+      return this.$route.hash === "#" + id
+    },
   },
   computed: {
     compChapters: function () {
       const chapters = {}
-      const { key } = this.sortSettings
       // For each of these letters
       // filter down the sorted projects
       // into chapers per letter
@@ -162,8 +167,6 @@ export default {
       return chapters
     },
     compLetters: function () {
-      const { key } = this.sortSettings
-
       return _.union(
         this.compSorted.map((item) => {
           return this.formattedKey(item)
@@ -182,8 +185,7 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 .item a {
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
@@ -203,6 +205,11 @@ export default {
 .item {
   break-inside: avoid-column;
   page-break-inside: avoid;
+  scroll-margin-top: 10vh;
+
+  &.target {
+    color: var(--accent);
+  }
 }
 
 .drop-cap {
@@ -243,15 +250,14 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-
 
 .button .circle,
 .button .circle {
   background: transparent;
-  width: .4rem;
-  height: .4rem;
+  width: 0.4rem;
+  height: 0.4rem;
   border-radius: 100%;
   display: inline-block;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
@@ -268,7 +274,6 @@ export default {
 .button.active .circle {
   background: var(--accent);
 }
-
 
 @media screen and (max-width: 647px) {
   .chapter {

@@ -1,7 +1,7 @@
 <template>
   <span>
-    <span class="date">{{ data.Date }}</span>
-    <span class="title">{{ data.Project }}</span>
+    <span class="date">{{ data.date }}</span>
+    <span class="title">{{ data.name }}</span>
   </span>
 </template>
 
