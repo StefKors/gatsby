@@ -146,6 +146,10 @@ export default {
   --accent-10: var(--c7-10);
 }
 
+.installation {
+  
+}
+
 /* For the light theme we want to style slight different */
 .light {
   .solo-show {
