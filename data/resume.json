@@ -1,5 +1,6 @@
 [
   {
+    "id": 9,
     "company": "Balena",
     "title": "Frontend Engineer",
     "date": "November 2019 - Present",
@@ -7,6 +8,7 @@
     "url": "https://www.balena.io"
   },
   {
+    "id": 8,
     "company": "oneacre.online",
     "title": "Co-Founder",
     "date": "March 2016 - Present",
@@ -14,6 +16,7 @@
     "url": "https://www.oneacre.online"
   },
   {
+    "id": 7,
     "company": "Ontwerpwerk",
     "title": "Developer",
     "date": "November 2018 - November 2019",
@@ -21,6 +24,7 @@
     "url": "https://www.ontwerpwer.nl"
   },
   {
+    "id": 6,
     "company": "PublishingLab",
     "title": "Developer",
     "date": "Januari 2018 - June 2018",
@@ -28,6 +32,7 @@
     "url": "http://www.publishinglab.nl"
   },
   {
+    "id": 5,
     "company": "PublishingLab",
     "title": "Design Intern",
     "date": "September 2017 - December 2017",
@@ -35,6 +40,7 @@
     "url": "http://www.publishinglab.nl"
   },
   {
+    "id": 4,
     "company": "Bynder",
     "title": "User Experience Design Intern",
     "date": "Februari 2017 - May 2017",
@@ -42,6 +48,7 @@
     "url": "https://www.bynder.com"
   },
   {
+    "id": 3,
     "company": "Mangrove",
     "title": "Interaction Design Intern",
     "date": "September 2015 - Februari 2016",
@@ -49,6 +56,7 @@
     "url": "https://www.mangrove.nl"
   },
   {
+    "id": 2,
     "company": "Navara",
     "title": "Junior Design Consultant",
     "date": "May 2014 - May 2015",
@@ -56,6 +64,7 @@
     "url": "https://www.navara.nl"
   },
   {
+    "id": 1,
     "company": "VanDen Collection",
     "title": "Product Designer",
     "date": "Februari 2013 - September 2013",

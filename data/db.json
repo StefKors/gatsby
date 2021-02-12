@@ -1,5 +1,15 @@
 [
   {
+    "id": 37,
+    "url": "https://openredactie.volkskrant.nl/",
+    "name": "Volkskrant Open Redactie",
+    "description": "The Open Editorial Board is a project by the Volkskrant. The goal of the project is twofold: Volkskrant wants to listen to their readers better and thus write articles that are more in line with their needs, concerns and interests. In addition, Volksrkant believes that readers can broaden or adjust their perspective as journalists.",
+    "tech": "Nuxt, Node.js, Express, MongoDB",
+    "type": "Website",
+    "images": 0,
+    "date": 2019
+  },
+  {
     "id": 36,
     "url": "https://sisselmarietonn.com",
     "name": "sisselmarietonn.com",

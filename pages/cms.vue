@@ -44,16 +44,13 @@
 
 <script>
 import db from "~/data/db.json"
+import resume from "~/data/resume.json"
 import * as _ from "lodash"
 export default {
   data() {
     return {
       formValues: {
-        project: "17",
-        name: "Radio Tonka",
-        location: "The Hague",
-        type: "Solo Show",
-        date: 2021,
+        date: 2020,
       },
       options: {
         type: [
@@ -64,6 +61,8 @@ export default {
           "Group Show",
           "Festival",
           "Artist Talk",
+          "Book Fair",
+          "Installation"
         ],
         date: {
           2021: "2021",
@@ -94,14 +93,23 @@ export default {
       return new Date().getFullYear()
     },
     projects() {
-      const sortedDB = _.sortBy(db, "name")
-      return sortedDB.map((item) => {
+      const resumeArray = resume.map((item, index) => {
+        return  {
+          value: 'job-' + item.id,
+          label: item.company,
+        }
+      })
+
+      const dbArray = db.map((item) => {
         return {
-          id: item.id,
-          value: item.id,
+          value: 'project-' + item.id,
           label: item.name,
         }
       })
+
+      const allWork = dbArray.concat(resumeArray)
+
+      return _.sortBy(allWork, "label")
     },
     cmsData() {
       return this.$store.state.cms
@@ -124,9 +132,9 @@ select {
   gap: 1rem;
 
   .store-data {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 </style>
