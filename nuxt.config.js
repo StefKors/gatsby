@@ -59,7 +59,7 @@ export default {
         title: "Stef\'s webpage online",
         site_name: "Stef\'s webpage online",
         description: "Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.",
-        img: "https://stefkors/social.png",
+        img: "https://stefkors.com/social.png",
         locale: "en_US",
         twitter: "@stef_kors",
         twitter_card: "summary_large_image",
