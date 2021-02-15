@@ -1,20 +1,13 @@
 <template>
-  <div v-if="event" class="event" :class="slugType">
+  <div v-if="event" class="event">
     <div class="labels">
-      <div class="event-date label">{{ event.date }}</div>
-      <div class="event-type label">
-        {{ event.type }}
-      </div>
+      <Badge :word="event.type" />
     </div>
-    <div>
-      <NuxtLink v-if="project" :to="'/#' + project.id">
-        {{ project.name }} <UpRight />
-      </NuxtLink>
-    </div>
-    <div>
-      <div class="event-name">{{ event.name }}</div>
-      <div>{{ event.location }}</div>
-    </div>
+    <NuxtLink v-if="project" :to="'/#' + event.project">
+      {{ project.name }} <UpRight />
+    </NuxtLink>
+    <div class="event-name">{{ event.name }}</div>
+    <div class="event-location">{{ event.location }}</div>
   </div>
 </template>
 
@@ -71,22 +64,8 @@ export default {
 <style lang="scss" scoped>
 .event {
   scroll-margin-top: 10vh;
-
-  .labels {
-    .label {
-      color: var(--color);
-      background-color: var(--color-10);
-      border-radius: 4px;
-      display: inline-block;
-      padding: 0.2rem;
-      font-size: 0.7rem;
-    }
-
-    .event-type {
-      color: var(--accent);
-      background-color: var(--accent-10);
-    }
-  }
+  flex: 0 0 25ch;
+  display: block;
 
   a {
     transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
@@ -106,87 +85,15 @@ export default {
     color: var(--accent);
   }
 
+  .event-location {
+    color: var(--color-50);
+  }
+
   .labels {
     margin-bottom: 0.5rem;
   }
 }
-
-.solo-show {
-  --accent: var(--c1);
-  --accent-10: var(--c1-10);
-}
-
-.duo-show {
-  --accent: var(--c2);
-  --accent-10: var(--c2-10);
-}
-
-.group-show {
-  --accent: var(--c3);
-  --accent-10: var(--c3-10);
-}
-
-.talk {
-  --accent: var(--c4);
-  --accent-10: var(--c4-10);
-}
-
-.artist-talk {
-  --accent: var(--c5);
-  --accent-10: var(--c5-10);
-}
-
-.festival {
-  --accent: var(--c6);
-  --accent-10: var(--c6-10);
-}
-
-.book {
-  --accent: var(--c7);
-  --accent-10: var(--c7-10);
-}
-
-.installation {
-  
-}
-
-/* For the light theme we want to style slight different */
 .light {
-  .solo-show {
-    --accent: var(--color);
-    --accent-10: var(--c1);
-  }
-
-  .duo-show {
-    --accent: var(--color);
-    --accent-10: var(--c2);
-  }
-
-  .group-show {
-    --accent: var(--color);
-    --accent-10: var(--c3);
-  }
-
-  .talk {
-    --accent: var(--color);
-    --accent-10: var(--c4);
-  }
-
-  .artist-talk {
-    --accent: var(--color);
-    --accent-10: var(--c5);
-  }
-
-  .festival {
-    --accent: var(--color);
-    --accent-10: var(--c6);
-  }
-
-  .book {
-    --accent: var(--color);
-    --accent-10: var(--c7);
-  }
-
   a:active,
   a:hover {
     color: var(--accent-10);

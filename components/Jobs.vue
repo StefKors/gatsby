@@ -52,4 +52,10 @@ export default {
   color: var(--bg-light);
   opacity: 1;
 }
+
+  @media screen and (max-width: 800px) {
+    .date {
+      display: none;
+    }
+  }
 </style>

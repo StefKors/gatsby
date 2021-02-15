@@ -9,6 +9,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    if (process.client && window) {
+      window.history.scrollRestoration = "auto"
+    }
+  },
+}
+</script>
+
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Unna&display=swap");
 @import url("https://rsms.me/inter/inter.css");
@@ -36,7 +46,7 @@ html {
   box-sizing: border-box;
 
   scroll-behavior: smooth;
-  
+
   @supports (font-variation-settings: normal) {
     font-family: "Inter var", sans-serif;
   }
