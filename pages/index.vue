@@ -6,6 +6,8 @@
     <About />
     <Border />
     <Overview2 :data="require('~/data/db.json')" />
+    <Border />
+    <Events />
   </article>
 </template>
 

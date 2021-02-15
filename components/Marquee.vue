@@ -5,18 +5,18 @@
         target="_blank"
         class="title"
         v-for="(item) in data"
-        :key="item.Number"
+        :key="item.id"
       >
         <a
           class="link"
-          v-if="Boolean(item.Url)"
-          :href="item.Url"
+          v-if="Boolean(item.url)"
+          :href="item.url"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Label :data="item" />
         </a>
-        <Label v-if="!Boolean(item.Url)" :data="item" />
+        <Label v-if="!Boolean(item.url)" :data="item" />
       </span>
     </MarqueeText>
   </div>

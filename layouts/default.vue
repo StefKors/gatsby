@@ -9,46 +9,33 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    if (process.client && window) {
+      window.history.scrollRestoration = "auto"
+    }
+  },
+}
+</script>
+
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Unna&display=swap");
 @import url("https://rsms.me/inter/inter.css");
+
+html {
+  @include genColorSet($button-theme);
+
+  &.dark {
+    @include genColorSet($dark-theme);
+  }
+
+  &.light {
+    @include genColorSet($light-theme);
+  }
+}
 html {
   font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
-
-html.light {
-  --color: #333;
-  --bg: #f2f2f2;
-  --bg-light: rgb(110, 110, 110);
-  --accent: #e84b3f;
-  --accent-dark: #d2493f;
-}
-
-:root,
-html.dark {
-  --color: #f2f2f2;
-  --bg: #333;
-  --bg-light: rgb(110, 110, 110);
-  --accent: #07ffe1;
-  --accent-dark: #04b4a0;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --color: #333;
-    --bg: #f2f2f2;
-    --bg-light: rgb(110, 110, 110);
-    --accent: #e84b3f;
-    --accent-dark: #d2493f;
-  }
-}
-
-html {
   font-size: 18px;
   line-height: 1.25;
   background: var(--bg);
@@ -57,12 +44,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
 
-h1,
-h2,
-h3,
-h4 {
+  scroll-behavior: smooth;
+
+  @supports (font-variation-settings: normal) {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 h2 {
@@ -121,8 +108,9 @@ a {
   p {
     max-width: 55ch;
   }
-  
-  p, li {
+
+  p,
+  li {
     font-size: 18px;
     letter-spacing: -0.0143007em;
     line-height: 1.37;
@@ -134,7 +122,7 @@ a {
 }
 
 .markdown {
-    a {
+  a {
     border-bottom: 1px solid var(--bg-light);
     transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 

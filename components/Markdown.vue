@@ -17,9 +17,6 @@ export default {
       required: true,
     },
   },
-  created() {
-    console.log("file", this.file)
-  },
   computed: {
     content() {
       return this.file.vue.component

@@ -16,6 +16,10 @@ export default {}
   gap: 1rem;
   max-width: 80ch;
   margin: auto;
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
