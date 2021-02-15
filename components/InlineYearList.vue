@@ -1,6 +1,6 @@
 <template>
   <span v-frag>
-    <span v-for="part in listParts" :key="part.value">
+    <span v-for="(part, index) in listParts" :key="index">
       <Badge v-if="part.type === 'element'" :word="part.value" />
       <Literal v-else :word="part.value" />
     </span>
@@ -21,7 +21,7 @@ export default {
       const list = _.map(this.list, (count, year) => {
         return `${year} had ${count} events`
       })
-      console.log("list", list)
+
       if (!("ListFormat" in Intl)) {
         return list.join(", ")
       }
