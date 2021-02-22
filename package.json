@@ -23,7 +23,7 @@
     "eslint": "^7.20.0",
     "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
-    "nuxt": "^2.15.0",
+    "nuxt": "^2.15.1",
     "nuxt-highcharts": "^1.0.7",
     "nuxt-social-meta": "^0.0.5",
     "pluralize": "^8.0.0",
