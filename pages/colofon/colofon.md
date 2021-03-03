@@ -1,0 +1,1 @@
+This website and all interations before it, wouldn't have existed without [Victoria Douka-Doukopoulou](http://dkdkpl.com/). She always manages to formulate the ideas in my head and turn it into writing. For this, her unrelenting support and love, I'm immensely grateful.
