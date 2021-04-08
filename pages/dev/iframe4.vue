@@ -4,10 +4,10 @@
     <iframe
       width="100%"
       height="300"
-      src="https://stefkors.github.io/iframe.html/"
+      src="https://stefkors.github.io/index.html/iframe"
       allowfullscreen="allowfullscreen"
       allowpaymentrequest
-      frameborder="0"
+      frameborder="2"
     ></iframe>
   </div>
 </template>
