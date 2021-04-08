@@ -1,0 +1,38 @@
+<template>
+  <div>
+    <h1>two of different origin</h1>
+    <iframe
+      width="100%"
+      height="300"
+      src="https://stefkors.github.io/index.html/"
+      allowfullscreen="allowfullscreen"
+      allowpaymentrequest
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="100%"
+      height="300"
+      src="https://www.stefsandvictoriasplaceontheinternet.nl"
+      allowfullscreen="allowfullscreen"
+      allowpaymentrequest
+      frameborder="0"
+    ></iframe>
+    <h1>two of same origin</h1>
+    <iframe
+      width="100%"
+      height="300"
+      src="https://stefkors.github.io/index.html/"
+      allowfullscreen="allowfullscreen"
+      allowpaymentrequest
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="100%"
+      height="300"
+      src="https://stefkors.github.io/index.html/"
+      allowfullscreen="allowfullscreen"
+      allowpaymentrequest
+      frameborder="0"
+    ></iframe>
+  </div>
+</template>
