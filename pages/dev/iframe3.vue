@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>two of different origin</h1>
+    <h1>two of same origin</h1>
     <iframe
       width="100%"
       height="300"
@@ -12,7 +12,7 @@
     <iframe
       width="100%"
       height="300"
-      src="https://www.stefsandvictoriasplaceontheinternet.nl"
+      src="https://stefkors.github.io/index.html/"
       allowfullscreen="allowfullscreen"
       allowpaymentrequest
       frameborder="0"
