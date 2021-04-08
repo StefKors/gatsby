@@ -13,7 +13,7 @@
 <script>
 import TreeItem from "~/assets/Icons/TreeItem.svg?inline"
 
-const omitName = [ "colofon", "artist-websites", "cms" ]
+const omitName = [ "colofon", "artist-websites", "cms", "dev" ]
 const omitPath = [ "/" ]
 
 export default {
@@ -33,12 +33,14 @@ export default {
     articles() {
       return this.$router.options.routes.filter(route => {
         // Omit any path included in omitPath array
+        // Precise match
         if (omitPath.includes(route.path)) {
           return false 
         }
 
         // Omit any name included in omitName array
-        if (omitName.includes(route.name) ) {
+        // Fuzzy match
+        if (omitName.some(str => route.path.includes(str)) ) {
           return false
         }
 
