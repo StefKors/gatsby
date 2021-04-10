@@ -3,7 +3,7 @@
     <h1>iframe in iframe</h1>
     <iframe
       width="100%"
-      height="300"
+      height="500"
       src="https://stefkors.github.io/index.html/iframe"
       allowfullscreen="allowfullscreen"
       allowpaymentrequest
