@@ -1,5 +1,6 @@
 <template>
   <div>
+    <a href="https://www.nytimes.com/">https://www.nytimes.com/</a>
     <h1>iframe in iframe</h1>
     <iframe
       width="100%"
