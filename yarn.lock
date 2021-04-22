@@ -9975,10 +9975,10 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
-vue-frag@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/vue-frag/-/vue-frag-1.1.4.tgz#a7b05350dcc13098404834df188401aa88caa95b"
-  integrity sha512-WtrondrZtu9XjvtdoAWrpB476Dr7wFPfELbmdC1h0Ikl3ExB2hNaqHAZVJi2hUmCu6f08HUSfIa9sB5YhSTLHw==
+vue-frag@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/vue-frag/-/vue-frag-1.1.5.tgz#1158f92361dff2c312e00b8ca85334c329e566e7"
+  integrity sha512-g+PP9pjW1gnrmPjy2Sa5jK/bfxYHK8Hgt1sVs/Y/7KT+srGJUwtGNwXNTUvWv/zJ2yGcvJVEH98eIrICyZX9Ng==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
