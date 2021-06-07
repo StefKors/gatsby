@@ -20,7 +20,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.1.0",
     "@nuxtjs/svg": "^0.1.12",
-    "eslint": "^7.27.0",
+    "eslint": "^7.28.0",
     "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
     "nuxt": "^2.15.6",
