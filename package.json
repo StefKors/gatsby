@@ -35,7 +35,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "frontmatter-markdown-loader": "^3.6.2",
+    "frontmatter-markdown-loader": "^3.6.3",
     "prettier": "^2.3.2",
     "webpack": "^5.42.1"
   }
