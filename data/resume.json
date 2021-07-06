@@ -1,9 +1,17 @@
 [
   {
+    "id": 10,
+    "company": "Beam",
+    "title": "Frontend Developer",
+    "date": "April 2021 - Present",
+    "location": "Remote",
+    "url": "https://beamapp.co"
+  },
+  {
     "id": 9,
     "company": "Balena",
     "title": "Frontend Engineer",
-    "date": "November 2019 - Present",
+    "date": "November 2019 - March 2021",
     "location": "Remote",
     "url": "https://www.balena.io"
   },

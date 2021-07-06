@@ -1,1 +1,1 @@
-Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.
+Building the future of exploring the internet at [Beam](https://beamapp.co).

@@ -1,17 +1,12 @@
 <template>
   <div class="wrapper">
-    <a
-      :href="job.url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="job"
-      v-for="job in data"
-      :key="job.date"
-    >
-      <div class="company">{{ job.company }}</div>
-      <div class="title">{{ job.title }}</div>
-      <div class="date">{{ job.date }}</div>
-    </a>
+    <div v-for="job in data" :key="job.date">
+      <a :href="job.url" target="_blank" rel="noopener noreferrer" class="job">
+        <div class="company">{{ job.company }}</div>
+        <div class="title">{{ job.title }}</div>
+        <div class="date">{{ job.date }}</div>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -53,9 +48,9 @@ export default {
   opacity: 1;
 }
 
-  @media screen and (max-width: 800px) {
-    .date {
-      display: none;
-    }
+@media screen and (max-width: 800px) {
+  .date {
+    display: none;
   }
+}
 </style>
