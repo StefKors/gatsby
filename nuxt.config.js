@@ -18,7 +18,10 @@ export default {
         content: 'Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
+      { rel: 'me', href: 'https://subculture.chat/@stef' }
+    ]
   },
   server: {
     port: isDev ? 3000 : 80
