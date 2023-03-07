@@ -9,6 +9,7 @@
         rel="noopener noreferrer"
         >GitHub</a
       >
+      <a rel="me" href="https://subculture.chat/@stef">Mastodon</a>
       <a
         href="https://linkedin.com/in/stefkors"
         target="_blank"
