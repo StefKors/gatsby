@@ -20,7 +20,7 @@ export default {
   components: { TreeItem },
   methods: {
     isHomepage() {
-      return this.$route.path === "/"
+      return this.$route.path === "/" || this.$route.path === "/commitment"
     },
     unslugify(slug) {
       const result = slug.replace(/\-/g, " ");

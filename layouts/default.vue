@@ -2,7 +2,7 @@
   <div class="default-layout">
     <Nav>
       <Navigation />
-      <UItoggle />
+      <!-- <UItoggle /> -->
     </Nav>
     <nuxt />
     <Footer />
@@ -25,15 +25,15 @@ export default {
 
 html {
   @include genColorSet($button-theme);
+  @include genColorSet($light-theme);
+}
 
-  &.dark {
+@media (prefers-color-scheme: dark) {
+  html {
     @include genColorSet($dark-theme);
   }
-
-  &.light {
-    @include genColorSet($light-theme);
-  }
 }
+
 html {
   font-family: "Inter", sans-serif;
   font-size: 18px;

@@ -1,5 +1,5 @@
 export const state = () => ({
-  UIMode: "dark",
+  // UIMode: "dark",
   sortSettings: {
     direction: "asc",
     key: "name",
@@ -18,17 +18,17 @@ export const mutations = {
     state.sortSettings.key = payload.value
     state.sortSettings.direction = payload.defaultSort
   },
-  toggleUIMode(state) {
-    if (state.UIMode === "dark") {
-      return (state.UIMode = "light")
-    }
+  // toggleUIMode(state) {
+  //   if (state.UIMode === "dark") {
+  //     return (state.UIMode = "light")
+  //   }
 
-    return (state.UIMode = "dark")
-  },
-  initUIMode(state) {
-    const mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
-    return state.UIMode = mode
-  },
+  //   return (state.UIMode = "dark")
+  // },
+  // initUIMode(state) {
+  //   const mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
+  //   return state.UIMode = mode
+  // },
   addCMSdata(state, payload) {
     payload.id = state.cms.length
     state.cms.push(payload)
