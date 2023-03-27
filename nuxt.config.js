@@ -15,7 +15,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.'
+        content: 'Developer with 5+ years of experience in building tools for creativity. Build and launched products with SwiftUI, React and TypeScript'
       }
     ],
     link: [
@@ -61,7 +61,7 @@ export default {
         url: "https://stefkors.com",
         title: "Stef\'s webpage online",
         site_name: "Stef\'s webpage online",
-        description: "Developer with 3+ years experienced in building tools for creativity. Driven by design, art and publishing he has worked at range of startups, design agencies and publishers.",
+        description: "Developer with 5+ years of experience in building tools for creativity. Build and launched products with SwiftUI, React and TypeScript",
         img: "https://stefkors.com/social.png",
         locale: "en_US",
         twitter: "@stef_kors",
