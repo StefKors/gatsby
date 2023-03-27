@@ -4,7 +4,7 @@
       <img class="appicon" src="~/assets/Commitment/mac1024.png" height="128px" width="128px" />
       <h1 align="center">Commitment</h1>
       <p>
-        Commitment is a new native macOS Git Client. Written in SwiftUI and built to be a light and powerfull companion during your workday. Available in testflight.
+        Commitment is a new native macOS Git Client. Written in SwiftUI and built to be a light and powerful companion during your workday. Available in TestFlight.
       </p>
     </div>
 
