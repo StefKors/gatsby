@@ -1,1 +1,1 @@
-Building the future of exploring the internet at [Beam](https://beamapp.co).
+Engineering delightful interfaces in React and SwiftUI. [Hire me](mailto:stef.kors@gmail.com)
