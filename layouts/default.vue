@@ -93,6 +93,10 @@ a {
   margin: 3rem;
   position: relative;
   display: block;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0.5rem;
+  }
 }
 
 .longform {
