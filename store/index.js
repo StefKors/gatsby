@@ -1,8 +1,8 @@
 export const state = () => ({
   // UIMode: "dark",
   sortSettings: {
-    direction: "asc",
-    key: "name",
+    direction: "desc",
+    key: "date",
   },
   cms: []
 })
