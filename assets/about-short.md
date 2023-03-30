@@ -1,5 +1,3 @@
-Stef Kors is a developer with a background in design and user research. His favourite work takes place at the intersection of design and code, building great websites with great people.
+Stef Kors is an experienced software engineer with expertise in React and SwiftUI. Most recently at [Beam](https://beamapp.co/), he played a key role in building a native macOS internet browser. Stef was responsible for building a bridge between web content and native views for capturing web content. He also implemented fast DOM parsing, high-performance SwiftUI views and an oembed proxy sever. He also gained a deep understanding of WebKit source code. 
 
-Right now he works at [Beam](https://beamapp.co/) building a new type of browser that's pushing the idea of how we work on and with the web. Before that he ran [oneacre.online](https://www.oneacre.online) together with [Victoria](http://dkdkpl.com) and [Titus](http://titusknegtel.nl), oneacre.online is a publication project for experimental long-form writing.
-
-He completed a bachelor in Communication and Multimedia Design at The Hague University of Applied Sciences with minors in Service Design and Co-Design. At the end of the day, he likes to build things — online and offline — that work well and efficiently.
+As a side project Stef is building [Commitment](/commitment), a new native macOS Git client designed to help users stay organized and productive. Written 100% in SwiftUI, currently in TestFlight access.
