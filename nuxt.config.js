@@ -2,6 +2,7 @@ import Mode from 'frontmatter-markdown-loader/mode'
 
 const isDev = process.env.NODE_ENV === 'development'
 export default {
+  target: 'static',
   ssr: false,
   components: true,
   /*
