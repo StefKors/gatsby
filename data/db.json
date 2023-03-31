@@ -1,6 +1,6 @@
 [
   {
-    "id": 39,
+    "id": 41,
     "url": "https://www.hellobeam.com/",
     "name": "Beam Widget",
     "description": "Share the latest cool links directly to your friends' home screen. No notifications: don't get distracted by constant pings and buzzing. Always top of mind: no app to open. Your friends' freshest links always pop right on your home screen. Share from any app.",
@@ -10,12 +10,32 @@
     "date": 2023
   },
   {
-    "id": 38,
+    "id": 40,
     "url": "https://www.beamapp.co/",
     "name": "Beam Browser",
     "description": "The Beam browser is an native macOS web browser with a built in note editor. It's has features to collect any web content, automatically group your tabs and publish your notes. It's a new way to collect your thoughts and experience the internet.",
     "tech": "SwiftUI, TypeScript, React",
     "type": "Native App",
+    "images": 0,
+    "date": 2022
+  },
+  {
+    "id": 39,
+    "url": "https://stefkors.com/commitment",
+    "name": "Commitment",
+    "description": "Commitment is a new native macOS Git Client. Written in SwiftUI and built to be a light and powerful companion during your workday. Available in TestFlight. ",
+    "tech": "SwiftUI, Swift, Git",
+    "type": "MacOS App",
+    "images": 0,
+    "date": 2023
+  },
+  {
+    "id": 38,
+    "url": "https://stefkors.com/gitlab-widget",
+    "name": "GitLab Widget",
+    "description": "GitLab Widget is a menu bar application that makes it easier to work with GitLab. The Widget makes it easy to see the merge requests you opened and the merge requests you should review. It will also notify you of the CI Status and when any of your merge requests get approved. ",
+    "tech": "SwiftUI, Swift",
+    "type": "MacOS App",
     "images": 0,
     "date": 2022
   },
