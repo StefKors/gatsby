@@ -79,15 +79,15 @@
             <picture>
         <source
           media="(prefers-color-scheme: dark)"
-          srcset="~/assets/Commitment/Images/changes-dark.png"
+          srcset="~/assets/Commitment/Images/Commitment.png"
         />
         <source
           media="(prefers-color-scheme: light)"
-          srcset="~/assets/Commitment/Images/changes-light.png"
+          srcset="~/assets/Commitment/Images/Commitment.png"
         />
         <img
           alt="Screenshot of Commitment, the native macOS Git Interface"
-          src="~/assets/Commitment/Images/changes-dark.png"
+          src="~/assets/Commitment/Images/Commitment.png"
         />
       </picture>
       </div>
