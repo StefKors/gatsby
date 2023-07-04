@@ -79,15 +79,15 @@
             <picture>
         <source
           media="(prefers-color-scheme: dark)"
-          srcset="~/assets/Affability/Images/Affability.png"
+          srcset="~/assets/Affability/Images/Screenshot-dark.png"
         />
         <source
           media="(prefers-color-scheme: light)"
-          srcset="~/assets/Affability/Images/Affability.png"
+          srcset="~/assets/Affability/Images/Screenshot-light.png"
         />
         <img
           alt="Screenshot of Affability"
-          src="~/assets/Affability/Images/Affability.png"
+          src="~/assets/Affability/Images/Screenshot-light.png"
         />
       </picture>
       </div>
