@@ -3,7 +3,7 @@
     <div class="header" align="center">
       <img
         class="appicon"
-        src="~/assets/GitLab/appicon.png"
+        src="~/assets/GitLab/appicon-development.png"
         height="128px"
         width="128px"
       />

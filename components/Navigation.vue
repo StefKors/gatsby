@@ -13,7 +13,7 @@
 <script>
 import TreeItem from "~/assets/Icons/TreeItem.svg?inline"
 
-const omitName = [ "colofon", "artist-websites", "cms", "dev" ]
+const omitName = [ "colofon", "artist-websites", "cms", "dev", "privacy" ]
 const omitPath = [ "/" ]
 
 export default {
