@@ -6,6 +6,8 @@
       <p>
         Affability is a small utility for app developers. Pick a color on your screen and get the SwiftUI Color values directly into your Clipboard.
       </p>
+
+      <button><a href="https://apps.apple.com/nl/app/affability/id6449466690?l=en-GB&mt=12">Download from Appstore</a></button>
     </div>
 
     <div>
@@ -103,6 +105,12 @@ export default {}
 .header p {
   max-width: 60ch;
   orphans: 3;
+}
+
+.header button {
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 /* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .appicon {
