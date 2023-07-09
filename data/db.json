@@ -1,5 +1,15 @@
 [
   {
+    "id": 42,
+    "url": "https://apps.apple.com/app/affability/id6449466690",
+    "name": "Affability",
+    "description": "Affability is a small utility for app developers. Pick a color on your screen and get the SwiftUI Color values directly into your Clipboard.",
+    "tech": "SwiftUI",
+    "type": "Native App",
+    "images": 0,
+    "date": 2023
+  },
+  {
     "id": 41,
     "url": "https://www.hellobeam.com/",
     "name": "Beam Widget",
