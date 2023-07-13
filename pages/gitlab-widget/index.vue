@@ -13,6 +13,14 @@
         with GitLab. The Widget makes it easy to see the merge requests you
         opened and the merge requests you should review. It will also notify you of the CI Status and when any of your merge requests get approved.
       </p>
+
+      <button>
+        <a
+          target="_blank"
+          href="https://apps.apple.com/app/merge-requests-for-gitlab/id6450935828"
+          >Download from Appstore</a
+        >
+      </button>
     </div>
 
     <div>
@@ -126,6 +134,14 @@ export default {}
     text-align: left;
   }
 }
+
+.header button {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
 /* cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s; */
 .appicon {
   width: 128px;

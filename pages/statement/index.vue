@@ -3,7 +3,7 @@
     <div class="header" align="center">
       <img
         class="appicon"
-        src="~/assets/Statement/mac1024.png"
+        src="~/assets/Statement/Large Icon1024.png"
         height="128px"
         width="128px"
       />
