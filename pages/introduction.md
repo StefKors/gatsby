@@ -1,1 +1,1 @@
-Engineering delightful interfaces in React and SwiftUI. [Hire me](mailto:stef.kors@gmail.com)
+Designing the future of hypertext tools, Lead Product Designer @[Kosmik](https://www.kosmik.app/)

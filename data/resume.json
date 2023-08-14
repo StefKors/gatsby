@@ -1,9 +1,17 @@
 [
   {
+    "id": 11,
+    "company": "Kosmik",
+    "title": "Lead Product Designer",
+    "date": "August 2023 - Present",
+    "location": "Remote",
+    "url": "https://www.kosmik.app"
+  },
+  {
     "id": 10,
     "company": "Beam",
     "title": "Frontend Engineer",
-    "date": "April 2021 - Present",
+    "date": "April 2021 - July 2023",
     "location": "Remote",
     "url": "https://beamapp.co"
   },
@@ -29,7 +37,7 @@
     "title": "Developer",
     "date": "November 2018 - November 2019",
     "locaiton": "The Hague Area, Netherlands",
-    "url": "https://www.ontwerpwer.nl"
+    "url": "https://www.ontwerpwerk.nl"
   },
   {
     "id": 6,
