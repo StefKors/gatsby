@@ -20,7 +20,7 @@ export default {
   components: { TreeItem },
   methods: {
     isHomepage() {
-      return this.$route.path === "/" || this.$route.path === "/commitment" || this.$route.path === "/gitlab-widget"
+      return this.$route.path === "/" // || this.$route.path === "/commitment" || this.$route.path === "/gitlab-widget"
     },
     unslugify(slug) {
       const result = slug.replace(/\-/g, " ");
