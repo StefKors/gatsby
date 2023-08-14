@@ -1,1 +1,2 @@
-Designing the future of hypertext tools, Lead Product Designer @[Kosmik](https://www.kosmik.app/)
+Designing the future of hypertext
+Lead Product Designer @[Kosmik](https://www.kosmik.app/)
