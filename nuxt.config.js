@@ -40,6 +40,7 @@ export default {
   plugins: [
     { src: '~/plugins/vuex-persist', ssr: false },
     '~/plugins/vue-formulate',
+    { src: "~/plugins/simple-analytics.js", ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
